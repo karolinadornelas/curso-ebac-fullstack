@@ -1,0 +1,26 @@
+#formulario{
+    display: flexbox;
+    margin: 10px;
+}
+
+button{
+    margin:10px;
+    font-size: 12px;
+    font-family: quicksand regular;
+}
+
+#numero1{
+    margin-bottom: 10px;
+}
+#numero2{
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 17px;
+    font-family: quicksand regular;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #000000;
+    margin-top: 55px;
+}
