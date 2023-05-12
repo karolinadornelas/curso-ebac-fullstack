@@ -1,0 +1,88 @@
+body{
+    width: auto;
+    color:rgb(0, 0, 0);
+    font-family: 'Quicksand';
+    line-height: 1.6em;
+    font-size: 12px;
+    text-align: left;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    background-color: rgb(196, 202, 202);
+}
+
+#container{
+    position: auto;
+    margin: 0 auto;
+    width: auto;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.caixa{
+    overflow: hidden;
+    margin-left: 150px;
+    margin-bottom: 45px;
+    width: auto;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+.caixinha{
+    padding: 5px;
+    font-family: 'Quicksand';
+    font-size: 9px;
+    color: #fdfdf14b;
+    line-height: 1em;
+    overflow: auto;
+
+}
+
+.top-titulo{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.conteudo{
+    padding: 5px;
+    color: black;
+    font-family: 'Quicksand';
+    font-size: 9px;
+    line-height: 1em;
+    /* border-radius: 20px;*/
+}
+
+label{
+    font-weight: bold;
+}
+
+form{
+    margin-top: 20px;
+}
+form input{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+   /* border-radius: 20px;*/
+}
+
+form button{
+    display: block;
+    border-radius: 20px;
+    padding: 8px;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    background-color: whitesmoke;
+}
+
+.box-pckg{
+    width: auto;
+    margin-top: 130px;
+    margin-left: 150px;
+}

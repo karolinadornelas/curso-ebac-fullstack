@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery Box</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="box-pckg">
+            <img src="./img/casual-life-3d-cardboard-box-and-parcel.png" alt="pacotes de entrega">
+        </div>
+        <div class="caixa">
+                <div class="caixinha">
+                    <div class="conteudo">
+                        <div class="top-titulo">Cadastro do participante</div>
+                    </div>
+                </div>
+
+                <div id="box">
+                    <form>
+                        <label>NOME</label>
+                        <input type="text" placeholder="nome completo">
+                        <label>E-MAIL</label>
+                        <input type="email" placeholder="exemplo@dominio.com">
+                        <label>TELEFONE</label>
+                        <input type="tel" id="TEL" placeholder="(DDD) xxxxx-xxxx">
+                        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+                            <script>
+                                $(document).ready(function () { 
+                                    var $campoTel = $("#TEL");
+                                    $campoTel.mask('(00)0000-00000');
+                                });
+                            </script>
+                        <label>CPF</label>
+                        <input type="text" id="CPF" placeholder="CPF do participante">
+                        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+                            <script>
+                                $(document).ready(function () { 
+                                    var $campoCpf = $("#CPF");
+                                    $campoCpf.mask('000.000.000-00', {reverse: true});
+                                });
+                            </script>
+                        <label>DATA DE NASCIMENTO</label>
+                        <input type="date" placeholder="dd/mm/aa">
+                        <label>CEP</label>
+                        <input type="text" id="CEP" placeholder="CEP">
+                        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+                            <script>
+                                $(document).ready(function () { 
+                                    var $campoCep = $("#CEP");
+                                    $campoCep.mask('00000-000', {reverse: true});
+                                });
+                            </script>
+                        <label>ENDEREÇO</label>
+                        <input type="text" placeholder="endereço para entrega">
+                        <button type="submit">Cadastrar!</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
