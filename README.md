@@ -15,12 +15,16 @@
 <p align="center">
           <h4 align="center">Acompanhamento</h4> 
       <p>
-  <br>
-  <a href="https://receitinhas-ebac.vercel.app">Projeto 1</a> | Página com utilização de imagens de fontes externas e um formulário para preencher. {menu de navegação funcionando com 3 páginas de conteúdo ('home', 'sobre' e 'pergunte') <br>
-  <a href="https://curso-ebac-frontend-html-js.vercel.app/">Projeto 2</a> | Aplicação: validação de dados: inserir dois valores, verificar se valor B é maior que valor A, em caso negativo, retornar mensagem de erro. <br>
-  <a href="https://agenda-ivory.vercel.app/">Projeto 3</a> | Aplicação: agenda telefônica, usuário pode inserir contatos.  {problemas: não possui botão de editar ou de deletar contatos, não apresenta limite de contatos. <br>
-  <a href="https://galeria-fawn.vercel.app/">Projeto 4</a> | jQuery: insersão de novas imagens via link {problemas: não tem botão para deletar fotos e não é possível excluir as fotos default. <br>
-  <a href="https://lista-de-tarefas-lime.vercel.app/">Projeto 5</a> | Lista de Tarefas, é possível marcar tarefas como concluídas {problemas: não tem opção de editar ou exluir tarefas.
+  <li><a href="https://receitinhas-ebac.vercel.app">ver projeto</a> | página com utilização de imagens de fontes externas e um formulário para preencher. {menu de navegação funcionando com 3 páginas de conteúdo ('home', 'sobre' e 'pergunte') </li><br>
+        
+  <li><a href="https://curso-ebac-frontend-html-js.vercel.app/">ver exercício</a> | aplicação: validação de dados: inserir dois valores, verificar se valor B é maior que valor A, em caso negativo, retornar mensagem de erro.</li> <br>
+        
+  <li><a href="https://agenda-ivory.vercel.app/">ver projeto</a> | agenda telefônica, usuário pode inserir contatos.  {problemas: não possui botão de editar ou de deletar contatos, não apresenta limite de contatos. </li><br>
+        
+  <li><a href="https://galeria-fawn.vercel.app/">ver exercício</a> | insersão de novas imagens via link {problemas: não tem botão para deletar fotos e não é possível excluir as fotos default.</li> <br>
+        
+  <li><a href="https://lista-de-tarefas-lime.vercel.app/">ver projeto</a> | <a href="https://github.com/karolinadornelas/lista-de-tarefas">ver repositório</a> | lista de tarefas, é possível marcar tarefas como concluídas {problemas: não tem opção de editar ou exluir tarefas. </li>
+        
   <br>
   <hr>
     
