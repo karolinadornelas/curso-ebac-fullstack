@@ -1,0 +1,42 @@
+#container{
+    width: 750px;
+    margin: 0 auto;
+}
+
+header{
+    color: #9FAFCA;
+    margin-left: 150px;
+    background-color: #272622;
+    width: 450px;
+    font-size: 80px;
+    text-align: center;
+    text-decoration: overline;
+}
+
+#navbar{
+    text-align: center;
+    background-color:#9FAFCA;
+    width: 450px;
+    margin-left: 150px;
+}
+
+#navbar a{
+    color: #272622;
+}
+
+#conteudo{
+    display: flex;
+}
+
+h3{
+}
+
+h2{
+    text-align: center;
+    background-color: #9FAFCA;
+}
+
+p{
+    margin-right: 10px;
+    text-align: left;
+}
