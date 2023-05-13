@@ -15,7 +15,7 @@
 <p align="center">
           <h4 align="center">Acompanhamento</h4> 
       <p>
-  <li><a href="https://receitinhas-ebac.vercel.app">ver projeto</a> | página com utilização de imagens de fontes externas e um formulário para preencher. {menu de navegação funcionando com 3 páginas de conteúdo ('home', 'sobre' e 'pergunte') </li><br>
+  <li><a href="https://receitinha-eight.vercel.app/">ver projeto</a> | página com utilização de imagens de fontes externas e um formulário para preencher. {menu de navegação funcionando com 3 páginas de conteúdo ('home', 'sobre' e 'pergunte') </li><br>
         
   <li><a href="https://curso-ebac-frontend-html-js.vercel.app/">ver exercício</a> | aplicação: validação de dados: inserir dois valores, verificar se valor B é maior que valor A, em caso negativo, retornar mensagem de erro.</li> <br>
         
