@@ -46,7 +46,9 @@ button {
     color: black;
     font-size: 12px;
     padding: 2px;
+    font-weight: bold;
 }
+
 .container{
     max-width: 1024px;
     width: 100%;
@@ -96,6 +98,10 @@ header {
     padding: 8px;
 }
 
+.sub-menu li a{
+    text-decoration: none;
+    color: sienna;
+}
 section{
     margin-top: 10px;
     border-top: 1px solid sienna;
@@ -107,6 +113,50 @@ section{
     column-gap: 1%;
     row-gap: 5%;
 }
+    @media screen and (max-width: 728px){
+        .conteudo{
+            display: block;
+            margin: 2%;
+            row-gap: 2%;
+        }
+    
+        .conteudo img{
+            margin-left: 25%;
+        }
+        .conteudo p{
+            text-align: justify;
+            margin: 2%;
+            row-gap: 2%;
+        }
+    
+        div.container{
+            display: block;
+            margin-left: 35%;
+            
+        }
+    
+        .menu{
+            display: inline-block;
+            grid-template-columns: auto;
+            font-size: small;
+        }
+    
+        .menu > li{
+            display: inline;
+            list-style: none;
+            padding: 16px;
+            border-top: 4px transparent;
+        }
+    
+        .clear-left{
+            clear: both;
+        }    
+
+        .compras{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+    }
 
 .produto{
 }
@@ -133,4 +183,82 @@ h3{
 
 .produto p{
     font-size: 12px;
+}
+
+@media screen and (max-width: 658px) {
+    .conteudo{
+        display: block;
+        margin: 2%;
+        row-gap: 2%;
+    }
+
+    .conteudo img{
+        margin-left: 25%;
+    }
+    .conteudo p{
+        text-align: justify;
+        margin: 2%;
+        row-gap: 2%;
+    }
+
+    div.container{
+        display: block;
+        margin-left: 35%;
+        
+    }
+
+    .menu{
+        display: inline-block;
+        grid-template-columns: auto;
+        font-size: small;
+    }
+
+    .menu > li{
+        display: inline;
+        list-style: none;
+        padding: 16px;
+        border-top: 4px transparent;
+    }
+
+    .clear-left{
+        clear: both;
+    }
+
+    .compras{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 2%;
+        row-gap: 2%;
+    }
+
+    .produto a{
+        display: block;
+        font-size: 20px;
+        text-decoration: none;
+        
+    }
+
+    .produto p{
+        font-size: 15px;
+    }
+
+    .botoes{
+        display: block;
+        margin-top: 20px;
+    }
+
+    button {
+        width: auto;
+        height: auto;
+        color: black;
+        font-size: 15px;
+        padding: 2px;
+        font-weight: bold;
+    }
+
+    h3{
+        margin: 2%;
+        row-gap: 2%; 
+    }
+    
 }
