@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Neucha&family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
     <title>bststrp</title>
     <style>
         *{
@@ -51,6 +53,37 @@
             padding: 10px;
         }
 
+        .mb-3{
+            margin-top: 15px;
+        }
+
+        #loginSpace{
+            margin-top: 10px;
+        }
+
+        #postagemDestaque{
+            margin-top: 30px;
+        }
+
+        .username{
+            display: flex;
+        }
+
+        .username img{
+            margin: 5px;
+            border-radius: 50%;
+            
+        }
+
+        .username p{
+            margin: 5px;
+            font-size: 12px;
+        }
+
+        #carouselNews{
+            margin: 10px;
+        }
+        
     </style>
 </head>
 <body>
@@ -75,12 +108,13 @@
             </nav>
             <!--descrição e menu-->
             <div id="caado">
-                <img src="assets/penguin-green.jpg" class="img-fluid img-thumbnail">
+                <img src="./img/penguin-green.jpg" class="img-fluid img-thumbnail">
                 <h5>wi.io</h5>
                 <p style="font-size: 12px;">wo.io é um site de perguntas e respostas para programadores profissionais e 
                     entusiastas. No site, os usuários podem fazer e responder perguntas sobre diversos tópicos relacionados 
                     à programação.
                 </p>
+
                 <div class="menu">
                     <h6>navegação</h6>
                     <ul class="side-menu">
@@ -103,68 +137,113 @@
                     </ul>
                 </div>
             </div>
-
-            
             <!--descrição e menu-->
           </div>
 
 
 
-          <div class="col-4">
+          <div class="col-5">
                 <div class="container">
                     <div class="row">
                         <div class="col">
                             <p style="color:white">coluna meio</p>
-                            <div class="card">
+
+                            <div class="ultimas-postagens">
+                                <h6><strong>discussões recentes</strong></h6>
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <div class="username">
+                                            <img src="./img/user.png" style="width: 50px;" class="img-fluid">
+                                            <p><strong>@user01: </strong>...migração para o Small Data, 
+                                            uso de gerentes digitais e crescimento do metaverso... </p> 
+                                        </div>  
+                                    </a>
+
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <div class="username">
+                                            <img src="./img/user.png" style="width: 50px;" class="img-fluid">
+                                            <p><strong>@user02: </strong> ...com ela, é possível desenhar telas de aplicativos, 
+                                            montar landing pages, construir biblioteca de componentes...</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <div class="username">
+                                            <img src="./img/user.png" style="width: 50px;" class="img-fluid">
+                                            <p><strong>@user03: </strong>algum especialista em sql pode me ajudar com isso?...</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div id="carouselNews" class="carousel slide">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselNews" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselNews" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselNews" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./img/penguin-green.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h5>bootcamp</h5>
+                                      <p>Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./img/penguin-green.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h5>Second slide label</h5>
+                                      <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./img/penguin-green.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h5>Third slide label</h5>
+                                      <p>Some representative placeholder content for the third slide.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselNews" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselNews" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            
+
+                            <div id="feature" class="card text-center">
+                                <div class="card-header">
+                                  post em alta
+                                </div>
                                 <div class="card-body">
-                                    <h2><strong>WI.IO</strong></h2>
-                                    <p style="font-size: 12px;">
-                                    Todo o conteúdo do wi.io é gerenciado pela própria comunidade 
-                                    com um sistema de votação similar ao do Reddit: os usuários votam “para cima” 
-                                    ou “para baixo” nas perguntas e respostas, dando destaque, ou não, 
-                                    para os conteúdos mais relevantes!
-                                    </p>
+                                  <h5 class="card-title">o que houve com a ia?</h5>
+                                  <img cla="img-thumbnail" src="./img/user.png" style="width: 20%; border-radius: 50%;">
+                                  <p class="card-text" style="font-size:12px">
+                                    A inteligência artificial (IA) é uma tecnologia 
+                                    que viabiliza a capacidade de máquinas pensarem como seres humanos, 
+                                    desenvolvendo o dom de aprender, raciocinar, analisar e decidir 
+                                    logicamente sobre fatos, resolvendo problemas que, até então, 
+                                    só poderiam ser solucionados por humanos. A IA possibilita que máquinas
+                                    aprendam com experiências, se ajustem a novas entradas de dados e 
+                                    performem tarefas como seres humanos...</p>
+                                  <a href="#" class="btn btn-success">continuar leitura</a>
+                                </div>
+                                <div class="card-footer text-body-secondary">
+                                  há 2 dias, por @user10
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
-
-                <table class="table">
-                    <thead>
-                        <tr><th>recent users<th></tr>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">first</th>
-                        <th scope="col">last</th>
-                        <th scope="col">main</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>cinna</td>
-                        <td>pompom</td>
-                        <td>python</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>gato</td>
-                        <td>keropi</td>
-                        <td>c#</td>
-                      </tr>
-                      <tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>pinguin</td>
-                        <td>doggo</td>
-                        <td>java</td>
-                      </tr>
-                    <tr>
-                </table>
             </div>
 
-            <div class="col-3">
+
+            <div class="col-4">
                 <div class="container">
                     <div class="row">
                         <div class="col">
@@ -181,38 +260,110 @@
                             <div class="container text-end">
                                 <div class="row align-items-end">
                                     <div class="col">
-                                        <div class="membro-status">
-                                            <button type="button" class="btn btn-outline-secondary">Entrar</button>
-                                            <button type="button" class="btn btn-outline-secondary">Registrar</button>
+                                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#registroUser">registrar</button>
+                                        <div class="modal fade" id="registroUser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="modalR">faça parte da comunidade wi.io!</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+
+                                                    <div class="modal-body">
+                                                        <div class="container text-start">
+                                                            <form style="color:rgb(0, 0, 0); font-size: 15px;" class="needs-validation" novalidate>
+                                                                <div class="mb-3">
+                                                                    <label for="validationText" class="form-label">nome completo</label>
+                                                                    <input type="text" class="form-control" id="validationText" value="text" required>
+                                                                    <div class="valid-feedback">OK!</div>
+                                                                </div>
+
+                                                                <div class="mb-3">
+                                                                    <label for="file" class="form-label">foto de perfil</label>
+                                                                    <input type="file" class="form-control" id="foto-perfil">
+                                                                </div>
+
+                                                                <div class="mb-3">
+                                                                    <label for="validationUsername" class="form-label">username</label>
+                                                                    <input type="text" class="form-control" id="validationUsername" required>
+                                                                    <div class="invalid-feedback">você precisa escolher um username!
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="mb-3">
+                                                                    <label for="validateEmail" class="form-label">email</label>
+                                                                    <input type="email" class="form-control" id="validationEmail" required>
+                                                                    <div class="invalid-feedback">você precisa escolher um username!
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="mb-3">
+                                                                    <label for="criarSenha" class="form-label">senha</label>
+                                                                    <input type="password" id="criarSenha" maxlength="8" placeholder="min 8 char" class="form-control">
+                                                                </div>
+
+                                                                <div class="mb-3">
+                                                                    <label for="tel" class="form-label">telefone</label>
+                                                                    <input type="tel" id="tel" placeholder="(DDD) xxxxx-xxxx" class="form-control">
+                                                                </div>
+
+                                                                <div class="mb-3 form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="check-box">
+                                                                    <label class="form-check-label" for="check-box">receber atualizações via sms</label>
+                                                                </div>
+                                                                    
+                                                            </form>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">voltar</button>
+                                                        <button class="btn btn-outline-success" type="submit">registrar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    
+                                        <button class="btn btn-outline-dark" data-bs-toggle="collapse" data-bs-target="#espacoEntrar">entrar</button>
+                                        <div id="espacoEntrar" class="collapse collapse-horizontal text-white">
+                                           <div id="loginSpace" class="card">
+                                                <div class="card-body">
+                                                    <div class="mb-3">
+                                                        <label for="mainEmail" class="form-label">username</label>
+                                                        <input type="email" class="form-control-sm" id="mainEmail" placeholder="exemplo@domain.com">
+                                                    </div>
+                                                    
+                                                    <div class="mb-2">    
+                                                        <label for="senha" class="form-label">senha</label>
+                                                        <input type="password" maxlength="8" class="form-control-sm" id="senha" placeholder="********">
+                                                    </div>
+                                                    <button type="submit" class="btn btn-outline-dark mb-3">login</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                        
                                 </div>
                             </div>
 
-                            <div id="feature" class="card text-center">
-                                <div class="card-header">
-                                  post em alta
-                                </div>
+                            <div id="postagemDestaque"class="card">
                                 <div class="card-body">
-                                  <h5 class="card-title">o que houve?</h5>
-                                  <p class="card-text" style="font-size:12px">A inteligência artificial (IA) é uma tecnologia 
-                                                        que viabiliza a capacidade de máquinas pensarem como seres humanos, 
-                                                        desenvolvendo o dom de aprender, raciocinar, analisar e decidir 
-                                                        logicamente sobre fatos, resolvendo problemas que, até então, 
-                                                        só poderiam ser solucionados por humanos. A IA possibilita que máquinas
-                                                        aprendam com experiências, se ajustem a novas entradas de dados e 
-                                                        performem tarefas como seres humanos...</p>
-                                  <a href="#" class="btn btn-success">continuar leitura</a>
-                                </div>
-                                <div class="card-footer text-body-secondary">
-                                  2 days ago
+                                    <h2><strong>WI.IO</strong></h2>
+                                    <p style="font-size: 12px;">
+                                    Todo o conteúdo do wi.io é gerenciado pela própria comunidade 
+                                    com um sistema de votação similar ao do Reddit: os usuários votam “para cima” 
+                                    ou “para baixo” nas perguntas e respostas, dando destaque, ou não, 
+                                    para os conteúdos mais relevantes!
+                                    </p>
                                 </div>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
