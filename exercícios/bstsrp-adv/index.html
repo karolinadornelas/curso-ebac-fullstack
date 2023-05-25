@@ -90,6 +90,10 @@
             margin: 10px;
         }
 
+        #botaoLogin{
+            margin-bottom: 10px;
+        }
+
         @media (max-width: 991.98px){
             #total{
                 display: flex;
@@ -187,56 +191,152 @@
 <body>
     <div class="container text-start">
         <div id="total" class="row align-items-start">
-          <div class="col-3">
+            <div class="col-3">
             <p style="color:white">coluna canto</p>
-            <nav class="navbar bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand">
-                        <i style="color:black" class="fa-regular fa-heart"></i>
-                        <i style="color:black" class="fa-solid fa-rotate"></i>
-                    </a>
+            <div class="container text-start">
+                <div class="row align-items-start">
                     <div class="col">
-                        <div class="input-group input-group-sm">
-                            <input type="text" class="form-control" placeholder="bs-pratica.jpg">
-                            <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa-solid fa-magnifying-glass"></i></span>
-                            <button type="div" class="btn btn-dark btn-sm"><i class="fa-solid fa-earth-asia"></i></button>
+                        <div id="redes" class="row">
+                            <div class="d-flex justify-content-start">
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-discord"></i>
+                                <i class="fa-brands fa-github"></i>
+                                <i class="fa-sharp fa-solid fa-folder-open"></i>
+                            </div>
+                        </div>
+                        <button id="botaoLogin" type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#registroUser">registrar</button>
+                        <div class="modal fade" id="registroUser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="modalR">faça parte da comunidade wi.io!</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <div class="container text-start">
+                                            <form style="color:rgb(0, 0, 0); font-size: 15px;" class="needs-validation" novalidate>
+                                                <div class="mb-3">
+                                                    <label for="validationText" class="form-label">nome completo</label>
+                                                    <input type="text" class="form-control" id="validationText" placeholder="seu nome" required>
+                                                    <div class="valid-feedback">OK!</div>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label for="file" class="form-label">foto de perfil</label>
+                                                    <input type="file" class="form-control" id="foto-perfil">
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label for="validationUsername" class="form-label">username</label>
+                                                    <input type="text" class="form-control" id="validationUsername" placeholder="@usernamelegal que vai ficar em display" required>
+                                                    <div class="invalid-feedback">você precisa escolher um username!
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label for="validateEmail" class="form-label">email</label>
+                                                    <input type="email" class="form-control" id="validationEmail" placeholder="exemplo@dominio.com" required>
+                                                    <div class="invalid-feedback">você precisa escolher um username!
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label for="criarSenha" class="form-label">senha</label>
+                                                    <input type="password" id="criarSenha" maxlength="8" placeholder="min 8 char" class="form-control">
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label for="tel" class="form-label">telefone</label>
+                                                    <input type="tel" id="tel" placeholder="(DDD) xxxxx-xxxx" class="form-control">
+                                                </div>
+
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="check-box">
+                                                    <label class="form-check-label" for="check-box">receber atualizações via sms</label>
+                                                </div>
+                                                    
+                                            </form>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">voltar</button>
+                                        <button class="btn btn-outline-success" type="submit">registrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <button id="botaoLogin" class="btn btn-outline-dark" data-bs-toggle="collapse" data-bs-target="#espacoEntrar">entrar</button>
+                        <div id="espacoEntrar" class="collapse collapse-horizontal text-white">
+                           <div id="loginSpace" class="card">
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <label for="mainEmail" class="form-label">username</label>
+                                        <input type="email" class="form-control-sm" id="mainEmail" placeholder="exemplo@domain.com">
+                                    </div>
+                                    
+                                    <div class="mb-2">    
+                                        <label for="senha" class="form-label">senha</label>
+                                        <input type="password" maxlength="8" class="form-control-sm" id="senha" placeholder="********">
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-dark mb-3">login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                        
+                </div>
+                </div>
+
+                <nav class="navbar bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand">
+                            <i style="color:black" class="fa-regular fa-heart"></i>
+                            <i style="color:black" class="fa-solid fa-rotate"></i>
+                        </a>
+                        <div class="col">
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" placeholder="bs-pratica.jpg">
+                                <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <button type="div" class="btn btn-dark btn-sm"><i class="fa-solid fa-earth-asia"></i></button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </nav>
-            <!--descrição e menu-->
-            <div id="caado">
-                <img src="./img/penguin-green.jpg" class="img-fluid img-thumbnail">
-                <h5>wi.io</h5>
-                <p style="font-size: 12px;">wo.io é um site de perguntas e respostas para programadores profissionais e 
-                    entusiastas. No site, os usuários podem fazer e responder perguntas sobre diversos tópicos relacionados 
-                    à programação.
-                </p>
+                </nav>
+                <!--descrição e menu-->
+                <div id="caado">
+                    <img src="./img/penguin-green.jpg" class="img-fluid img-thumbnail">
+                    <h5>wi.io</h5>
+                    <p style="font-size: 12px;">wo.io é um site de perguntas e respostas para programadores profissionais e 
+                        entusiastas. No site, os usuários podem fazer e responder perguntas sobre diversos tópicos relacionados 
+                        à programação.
+                    </p>
 
-                <div class="menu">
-                    <h6>navegação</h6>
-                    <ul class="side-menu">
-                        <li>
-                            <a class="navbar-brand" href="">
-                            <i style="color:black" class="fa-solid fa-house"></i> home</a>
-                        </li>
-                        <li>
-                            <a class="navbar-brand" href="">
-                            <i style="color:black" class="fa-solid fa-image"></i> galeria</a>
-                        </li>
-                        <li>
-                            <a class="navbar-brand" href="">
-                            <i style="color:black" class="fa-solid fa-folder-open"></i> documentos</a>
-                        </li>
-                        <li>
-                            <a class="navbar-brand" href="">
-                            <i style="color:black" class="fa-regular fa-newspaper"></i> newssetler</a>
-                        </li>
-                    </ul>
+                    <div class="menu">
+                        <h6>navegação</h6>
+                        <ul class="side-menu">
+                            <li>
+                                <a class="navbar-brand" href="">
+                                <i style="color:black" class="fa-solid fa-house"></i> home</a>
+                            </li>
+                            <li>
+                                <a class="navbar-brand" href="">
+                                <i style="color:black" class="fa-solid fa-image"></i> galeria</a>
+                            </li>
+                            <li>
+                                <a class="navbar-brand" href="">
+                                <i style="color:black" class="fa-solid fa-folder-open"></i> documentos</a>
+                            </li>
+                            <li>
+                                <a class="navbar-brand" href="">
+                                <i style="color:black" class="fa-regular fa-newspaper"></i> newssetler</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <!--descrição e menu-->
             </div>
-            <!--descrição e menu-->
-          </div>
 
 
 
@@ -251,7 +351,7 @@
                                 <div class="list-group">
                                     <a href="#" class="list-group-item list-group-item-action">
                                         <div class="username">
-                                            <img src=".img/user.png" style="width: 50px;" class="img-sm">
+                                            <img src="./img/user.png" style="width: 50px;" class="img-sm">
                                             <p><strong>@user01: </strong>...migração para o Small Data, 
                                             uso de gerentes digitais e crescimento do metaverso... </p> 
                                         </div>  
@@ -285,7 +385,7 @@
                                     <img src="./img/flower (1).jpg" class="d-block w-100" alt="...">
                                   </div>
                                   <div class="carousel-item">
-                                    <img src="./img/background-puppy1.jpg" class="d-block w-100" alt="...">
+                                    <img src="./img/flower (1).jpg" class="d-block w-100" alt="...">
                                   </div>
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutomatico" data-bs-slide="prev">
@@ -331,103 +431,8 @@
                 <div class="container text-start">
                     <div class="row">
                         <div class="col">
-                            <p style="color:white">coluna canto</p>
-                            <div id="redes" class="row">
-                                <div class="d-flex justify-content-end">
-                                    <i class="fa-brands fa-twitter"></i>
-                                    <i class="fa-brands fa-discord"></i>
-                                    <i class="fa-brands fa-github"></i>
-                                    <i class="fa-sharp fa-solid fa-folder-open"></i>
-                                </div>
-                            </div>
+                            <p style="color:white">coluna canto</p>                        
                             
-                            <div class="container text-end">
-                                <div class="row align-items-end">
-                                    <div class="col">
-                                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#registroUser">registrar</button>
-                                        <div class="modal fade" id="registroUser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="modalR">faça parte da comunidade wi.io!</h1>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                                    </div>
-
-                                                    <div class="modal-body">
-                                                        <div class="container text-start">
-                                                            <form style="color:rgb(0, 0, 0); font-size: 15px;" class="needs-validation" novalidate>
-                                                                <div class="mb-3">
-                                                                    <label for="validationText" class="form-label">nome completo</label>
-                                                                    <input type="text" class="form-control" id="validationText" placeholder="seu nome" required>
-                                                                    <div class="valid-feedback">OK!</div>
-                                                                </div>
-
-                                                                <div class="mb-3">
-                                                                    <label for="file" class="form-label">foto de perfil</label>
-                                                                    <input type="file" class="form-control" id="foto-perfil">
-                                                                </div>
-
-                                                                <div class="mb-3">
-                                                                    <label for="validationUsername" class="form-label">username</label>
-                                                                    <input type="text" class="form-control" id="validationUsername" placeholder="@usernamelegal que vai ficar em display" required>
-                                                                    <div class="invalid-feedback">você precisa escolher um username!
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="mb-3">
-                                                                    <label for="validateEmail" class="form-label">email</label>
-                                                                    <input type="email" class="form-control" id="validationEmail" placeholder="exemplo@dominio.com" required>
-                                                                    <div class="invalid-feedback">você precisa escolher um username!
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="mb-3">
-                                                                    <label for="criarSenha" class="form-label">senha</label>
-                                                                    <input type="password" id="criarSenha" maxlength="8" placeholder="min 8 char" class="form-control">
-                                                                </div>
-
-                                                                <div class="mb-3">
-                                                                    <label for="tel" class="form-label">telefone</label>
-                                                                    <input type="tel" id="tel" placeholder="(DDD) xxxxx-xxxx" class="form-control">
-                                                                </div>
-
-                                                                <div class="mb-3 form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="check-box">
-                                                                    <label class="form-check-label" for="check-box">receber atualizações via sms</label>
-                                                                </div>
-                                                                    
-                                                            </form>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">voltar</button>
-                                                        <button class="btn btn-outline-success" type="submit">registrar</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        <button class="btn btn-outline-dark" data-bs-toggle="collapse" data-bs-target="#espacoEntrar">entrar</button>
-                                        <div id="espacoEntrar" class="collapse collapse-horizontal text-white">
-                                           <div id="loginSpace" class="card">
-                                                <div class="card-body">
-                                                    <div class="mb-3">
-                                                        <label for="mainEmail" class="form-label">username</label>
-                                                        <input type="email" class="form-control-sm" id="mainEmail" placeholder="exemplo@domain.com">
-                                                    </div>
-                                                    
-                                                    <div class="mb-2">    
-                                                        <label for="senha" class="form-label">senha</label>
-                                                        <input type="password" maxlength="8" class="form-control-sm" id="senha" placeholder="********">
-                                                    </div>
-                                                    <button type="submit" class="btn btn-outline-dark mb-3">login</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>                                        
-                                </div>
-                            </div>
 
                             
                             <div id="postagemDestaque"class="card">
