@@ -12,18 +12,19 @@
     
 [**EBAC**](https://ebaconline.com.br/) |
 [**LinkedIn**](https://www.linkedin.com/in/karolina-dornelas-b6aa29239/) |
+[**Notion**](https://tide-syringa-264.notion.site/EBAC-229fe7e470a94920934ffa7f59f0a896)
 <p align="center">
           <h4 align="center">Acompanhamento</h4> 
-      <p>
-  <li><a href="https://receitinha-eight.vercel.app/">ver projeto</a> | página com utilização de imagens de fontes externas e um formulário para preencher. {menu de navegação funcionando com 3 páginas de conteúdo ('home', 'sobre' e 'pergunte') </li><br>
+      
+  <li><a href="https://receitinha-eight.vercel.app/">ver projeto</a> | blog simples com utilização de imagens de fontes externas e um formulário para preencher. {menu de navegação funcionando com 3 páginas de conteúdo ('home', 'sobre' e 'pergunte') </li><br>
         
-  <li><a href="https://curso-ebac-frontend-html-js.vercel.app/">ver exercício</a> | aplicação: validação de dados: inserir dois valores, verificar se valor B é maior que valor A, em caso negativo, retornar mensagem de erro.</li> <br>
+  <li><a href="https://btsrp-adv.vercel.app/">ver exercício</a> | blog com bootstrap responsivo</li> <br>
         
-  <li><a href="https://agenda-ivory.vercel.app/">ver projeto</a> | agenda telefônica, usuário pode inserir contatos.  {problemas: não possui botão de editar ou de deletar contatos, não apresenta limite de contatos. </li><br>
+  <li><a href="https://agenda-ivory.vercel.app/">ver exercício</a> | agenda telefônica, usuário pode inserir contatos.  {problemas: não possui botão de editar ou de deletar contatos, não apresenta limite de contatos. </li><br>
         
   <li><a href="https://galeria-fawn.vercel.app/">ver exercício</a> | insersão de novas imagens via link {problemas: não tem botão para deletar fotos e não é possível excluir as fotos default.</li> <br>
         
-  <li><a href="https://lista-de-tarefas-lime.vercel.app/">ver projeto</a> | <a href="https://github.com/karolinadornelas/lista-de-tarefas">ver repositório</a> | lista de tarefas, é possível marcar tarefas como concluídas {problemas: não tem opção de editar ou exluir tarefas. </li>
+  <li><a href="https://lista-de-tarefas-lime.vercel.app/">ver exercício</a> | <a href="https://github.com/karolinadornelas/lista-de-tarefas">ver repositório</a> | lista de tarefas, é possível marcar tarefas como concluídas {problemas: não tem opção de editar ou exluir tarefas. </li>
         
   <br>
   <hr>
