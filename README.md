@@ -1,5 +1,5 @@
 <div align="center">
-  <img align="center" width="250px" src="https://github.com/karolinadornelas/curso-ebac-fullstack/blob/main/assets/ebac.png">
+  <img align="center" width="90px" src="https://github.com/karolinadornelas/curso-ebac-fullstack/blob/main/assets/ebac.png">
   <h4>Arquivos de Estudo para o curso de Desenvolvedor Full-Stack Python, pela EBAC<h4>
 </div>
 
