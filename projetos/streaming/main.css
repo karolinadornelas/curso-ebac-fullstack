@@ -5,10 +5,10 @@ html, body, #home {
 
 body {
 	background: url(./img/capa.png),
-				url(./img/noise.png),
+				url(./img/ruido.png),
 				linear-gradient(50deg,#4b7ff0,#2926f8);
 	background-attachment: fixed;
-	font-family: 'quicksand',sans-serif;
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
 nav.navbar-transparente {
@@ -22,4 +22,43 @@ nav.navbar-transparente {
 
 .navbar-light .navbar-nav .nav-link:hover {
 	color: #9ba1f0;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,0.5);
+}
+
+.divisor{
+	width: 1px;
+	background: white;
+	margin: 12px 15px;
+}
+
+.capa{
+	text-align: center;
+}
+
+.carousel-control-next, .carousel-control-prev{
+	width: 5%;
+}
+
+.btn-custom{
+	border-radius: 500px;
+	color: white;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+	padding: 10px 20px;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+}
+
+.btn-branco{
+	border: 2px solid white;
+}
+
+.btn-branco:hover{
+	background-color: white;
+	color: black;
 }
