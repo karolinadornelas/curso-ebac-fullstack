@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <title>bunyme - plataforma de streaming</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-     <header>
+    <header>
         <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
             <div class="container">
                 
                 <a href="newsettler.html" class="navbar-brand">
-                <img src="./img/btn1.svg" width="142">
+                <img src="./img/bg-st-removebg-preview.png" width="142">
                 </a>
 
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
@@ -27,27 +24,23 @@
 
                 <div class="collapse navbar-collapse" id="nav-principal">
                     <ul class="navbar-nav ml-auto">
+
                         <li class="nav-item">
-                            <a href="" class="nav-link">perfil</a>
+                            <a href="" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></i></a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="" class="nav-link">premium</a>
+                            <a href="" class="nav-link"><i class="fa-solid fa-crown"></i></a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="" class="nav-link">watchlist</a>
+                            <a href="" class="nav-link"><i class="fa-solid fa-bookmark"></i></a>
                         </li>
-
-                        <li class="nav-item divisor"></li>
-
+                        
                         <li class="nav-item">
-                            <a href="" class="nav-link">login</a>
+                            <a href="" class="nav-link"><i class="fa-solid fa-user"></i></a>
                         </li>
 
-                        <li class="nav-item">
-                            <a href="" class="nav-link">registrar</a>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -63,21 +56,24 @@
                         <div class="carousel-inner">
 
                             <div class="carousel-item active">
-                                <h2>recomendações da semana</h2>
+                                <h1>RECOMENDAÇÕES DA SEMANA</h1>
                                 <a href="" class="btn btn-lg btn-custom btn-branco">
                                     aproveite nossa seleção
+                                </a>
+                                <a href="" class="btn btn-lg btn-custom btn-roxo">
+                                    faça sua sugestão
                                 </a>
                             </div>
 
                             <div class="carousel-item">
-                                <h2>lançamentos da temporada</h2>
+                                <h1>LANÇAMENTOS DA TEMPORADA</h1>
                                 <a href="" class="btn btn-lg btn-custom btn-branco">
                                     assistir
                                 </a>
                             </div>
 
                             <div class="carousel-item">
-                                <h2>artista destaque</h2>
+                                <h1>ARTISTA DESTAQUE</h1>
                                 <a href="" class="btn btn-lg btn-custom btn-branco">
                                     <i class="fas fa-music"></i> ouça agora
                                 </a>
@@ -97,11 +93,133 @@
         </div>
     </section>
 
-    
+    <div id="mural">
+        <swiper-container class="mySwiper" slides-per-view="4" centered-slides="true" navigation="true" space-between="30" grab-cursor="true" loop="true">
+            <swiper-slide>
+                <img src="./img/an-01.jpg">
+                <div class="img__overlay">
+                    <div class="img__title">AN-01</div>
+                    <p class="img__desc">aqui descreve o enredo do desenho</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./img/an-02.jpg">
+                <div class="img__overlay">
+                    <div class="img__title">AN-01</div>
+                    <p class="img__desc">aqui descreve o enredo do desenho</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./img/an-03.jpg">
+                <div class="img__overlay">
+                    <div class="img__title">AN-01</div>
+                <p class="img__desc">aqui descreve o enredo do desenho</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./img/an-04.jpg">
+                <div class="img__overlay">
+                    <div class="img__title">AN-01</div>
+                    <p class="img__desc">aqui descreve o enredo do desenho</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./img/an-05.png">
+                <div class="img__overlay">
+                    <div class="img__title">AN-01</div>
+                    <p class="img__desc">aqui descreve o enredo do desenho</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./img/an-06.jpg">
+                <div class="img__overlay">
+                    <div class="img__title">AN-01</div>
+                    <p class="img__desc">aqui descreve o enredo do desenho</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./img/an-01.jpg">
+                <div class="img__overlay">
+                    <div class="img__title">AN-01</div>
+                    <p class="img__desc">aqui descreve o enredo do desenho</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./img/an-07.jpg">
+                <div class="img__overlay">
+                    <div class="img__title">AN-01</div>
+                    <p class="img__desc">aqui descreve o enredo do desenho</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./img/an-08.jpg">
+                <div class="img__overlay">
+                    <div class="img__title">AN-01</div>
+                    <p class="img__desc">aqui descreve o enredo do desenho</p>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+    </div>
 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="./img/bg-st-removebg-preview.png" width="142">
+                </div>
+            
+                <div class="col-md-2">
+                    <h4>Navegação</h4>
+                    <ul class="navbar-nav">
+                        <li><a href="">Populares</a></li>
+                        <li><a href="">Simulcast</a></li>
+                        <li><a href="">Mangá</a></li>
+                        <li><a href="">Calendário de Lançamentos</a></l>
+                        <li><a href="">Notícias</a></li>
+                    </ul>
+                </div>
+
+            <div class="col-md-2">
+                <h4>Comunidades</h4>
+                <ul class="navbar-nav">
+                    <li><a href="">Artistas</a></li>
+                    <li><a href="">Desenvolvedores</a></li>
+                    <li><a href="">Marcas</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2">
+                <h4>Conecte-se</h4>
+                <ul class="navbar-nav">
+                    <li><a href="">Youtube</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Tik Tok</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <ul>
+                    <li>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    </li>
+                    <li>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li><a href=""><i class="fa-brands fa-discord"></i></a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
 </body>
 </html>
