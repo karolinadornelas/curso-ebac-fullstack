@@ -7,7 +7,9 @@
     <title>animefy - plataforma de streaming</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
     <header>
@@ -30,17 +32,43 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="" class="nav-link"><i class="fa-solid fa-crown"></i></a>
+                            <a href="./premium.html" class="nav-link"><i class="fa-solid fa-crown"></i></a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="" class="nav-link"><i class="fa-solid fa-bookmark"></i></a>
+                            <a href="./login.html" class="nav-link"><i class="fa-solid fa-bookmark"></i></a>
                         </li>
                         
                         <li class="nav-item">
-                            <a href="" class="nav-link"><i class="fa-solid fa-user"></i></a>
+                            
+                            <button id="profile-op" class="btn btn-trasnparent" data-bs-toggle="collapse" data-bs-target="#collapse-profile"><i class="fa-solid fa-user"></i></button>                            
+                            <div id="collapse-profile" class="collapse collpase-horizontal text-black">
+                                <div id="espacoEntrar" class="card">
+                                    <div class="card-body">
+                                        <div id="entrar"class="mb-3">
+                                            <a href="./login.html">
+                                                <b>ENTRAR</b>
+                                                <p>Bem vindo, de volta! Faça o login usando uma conta existente.</p>
+                                            </a>
+                                        </div>
+                                        <div class="entrar-divider"></div>
+                                        <div id="entrar" class="mb-2">
+                                            <a href="./login.html">
+                                                <b>REGISTRAR</b>
+                                                <p>Ainda não tem uma conta? Inscreva-se gratuitamente!</p>
+                                            </a>
+                                        </div>
+                                        
+                                        <a id="premium-resgate" href="./premium.html">
+                                            <div class="resgate-link">
+                                                <i class="fa-solid fa-crown"></i>
+                                                <p>resgate 10 dias de premium grátis</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -93,73 +121,288 @@
         </div>
     </section>
 
-    <div id="mural">
-        <swiper-container class="mySwiper" slides-per-view="4" centered-slides="true" navigation="true" space-between="30" grab-cursor="true" loop="true">
-            <swiper-slide>
-                <img src="./img/an-01.jpg">
-                <div class="img__overlay">
-                    <div class="img__title">AN-01</div>
-                    <p class="img__desc">aqui descreve o enredo do desenho</p>
+
+    <div id="feed">
+        <div id="mural" class="row">
+            <div class="col-2"></div>
+            
+            <div class="col-8">
+                <div class="feed-header">
+                    <h2>Títulos Populares</h2>
+                    <p>Confira os envios populares que estão disponíveis gratuitamente!</p>
+                    <div class="feed-divider"></div>
                 </div>
-            </swiper-slide>
-            <swiper-slide>
-                <img src="./img/an-02.jpg">
-                <div class="img__overlay">
-                    <div class="img__title">AN-01</div>
-                    <p class="img__desc">aqui descreve o enredo do desenho</p>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <img src="./img/an-03.jpg">
-                <div class="img__overlay">
-                    <div class="img__title">AN-01</div>
-                <p class="img__desc">aqui descreve o enredo do desenho</p>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <img src="./img/an-04.jpg">
-                <div class="img__overlay">
-                    <div class="img__title">AN-01</div>
-                    <p class="img__desc">aqui descreve o enredo do desenho</p>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <img src="./img/an-05.png">
-                <div class="img__overlay">
-                    <div class="img__title">AN-01</div>
-                    <p class="img__desc">aqui descreve o enredo do desenho</p>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <img src="./img/an-06.jpg">
-                <div class="img__overlay">
-                    <div class="img__title">AN-01</div>
-                    <p class="img__desc">aqui descreve o enredo do desenho</p>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <img src="./img/an-01.jpg">
-                <div class="img__overlay">
-                    <div class="img__title">AN-01</div>
-                    <p class="img__desc">aqui descreve o enredo do desenho</p>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <img src="./img/an-07.jpg">
-                <div class="img__overlay">
-                    <div class="img__title">AN-01</div>
-                    <p class="img__desc">aqui descreve o enredo do desenho</p>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <img src="./img/an-08.jpg">
-                <div class="img__overlay">
-                    <div class="img__title">AN-01</div>
-                    <p class="img__desc">aqui descreve o enredo do desenho</p>
-                </div>
-            </swiper-slide>
-        </swiper-container>
+                
+    
+                <swiper-container class="mySwiper" slides-per-view="6" centered-slides="true" navigation="true" space-between="30" grab-cursor="true" loop="true">
+                    <swiper-slide>
+                        <img src="./img/an-01.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">AN-01</div>
+                            <p class="img__txt">aqui descreve o enredo do desenho</p>
+                            <div class="menu__desc">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                            
+                        </div>
+                    </swiper-slide>
+                    
+                    <swiper-slide>
+                        <img src="./img/an-02.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">AN-01</div>
+                            <p class="img__txt">aqui descreve o enredo do desenho</p>
+                            <div class="menu__desc">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                        
+                    <swiper-slide>
+                        <img src="./img/an-03.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">AN-01</div>
+                            <p class="img__txt">aqui descreve o enredo do desenho</p>
+                            <div class="menu__desc">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                        
+                    <swiper-slide>
+                        <img src="./img/an-04.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">AN-01</div>
+                            <p class="img__txt">aqui descreve o enredo do desenho</p>
+                            <div class="menu__desc">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+    
+                    <swiper-slide>
+                        <img src="./img/an-05.png">
+                        <div class="img__overlay">
+                            <div class="img__title">AN-01</div>
+                            <p class="img__txt">aqui descreve o enredo do desenho</p>
+                            <div class="menu__desc">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+    
+                    <swiper-slide>
+                        <img src="./img/an-06.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">AN-01</div>
+                            <p class="img__txt">aqui descreve o enredo do desenho</p>
+                            <div class="menu__desc">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+    
+                    <swiper-slide>
+                        <img src="./img/an-07.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">AN-01</div>
+                            <p class="img__txt">aqui descreve o enredo do desenho</p>
+                            <div class="menu__desc">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+    
+                    <swiper-slide>
+                        <img src="./img/an-08.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">AN-01</div>
+                            <p class="img__txt">aqui descreve o enredo do desenho</p>
+                            <div class="menu__desc">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+    
+                    <swiper-slide>
+                        <img src="./img/an-09.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">AN-01</div>
+                            <p class="img__txt">aqui descreve o enredo do desenho</p>
+                            <div class="menu__desc">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <img src="./img/an-10.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">AN-01</div>
+                            <p class="img__txt">aqui descreve o enredo do desenho</p>
+                            <div class="menu__desc">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <img src="./img/an-11.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">AN-01</div>
+                            <p class="img__txt">aqui descreve o enredo do desenho</p>
+                            <div class="menu__desc">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <img src="./img/an-12.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">AN-01</div>
+                            <p class="img__txt">aqui descreve o enredo do desenho</p>
+                            <div class="menu__desc">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <img src="./img/an-13.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">AN-01</div>
+                            <p class="img__txt">aqui descreve o enredo do desenho</p>
+                            <div class="menu__desc">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <img src="./img/an-14.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">AN-01</div>
+                            <p class="img__txt">aqui descreve o enredo do desenho</p>
+                            <div class="menu__desc">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <img src="./img/an-15.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">AN-01</div>
+                            <p class="img__txt">aqui descreve o enredo do desenho</p>
+                            <div class="menu__desc">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <img src="./img/an-16.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">AN-01</div>
+                            <p class="img__txt">aqui descreve o enredo do desenho</p>
+                            <div class="menu__desc">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <img src="./img/an-17.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">AN-01</div>
+                            <p class="img__txt">aqui descreve o enredo do desenho</p>
+                            <div class="menu__desc">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+
+                            </div>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+        
+            </div>
+            
+            <div class="col-2"></div> 
+
+        </div>
     </div>
+
+    <div id="destaque" class="row bg-black">
+        <div class="col-2"></div>
+            
+        <div class="col-8">
+            <div class="row">
+                <div class="destaque">
+                    <img id="destaque-capa" src="./img/capassa.png">
+                    <div class="desc_img__overlay">
+                        <div class="desc_img__text">
+                            <button type="button" class="desc__btn">
+                                <i class="fa-solid fa-play"></i>AN-CAPA
+                            </button>
+                        </div>
+                    </div>
+                    <div class="feed-divider"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2"></div>
+        
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="noticias">
+                <div  class="content-wrapper">
+                    <div class="feed-header">
+                        <h2>Notícias</h2>
+                        <p>Confira os envios populares que estão disponíveis gratuitamente!</p>
+                        <div class="feed-divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <footer>
         <div class="container">
@@ -217,6 +460,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
