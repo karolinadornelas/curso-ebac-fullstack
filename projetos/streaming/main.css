@@ -55,6 +55,7 @@ body {
 nav.navbar-transparente {
 	padding: 15px 0px;
 	background: rgba(0,0,0,0.6);
+	height: 100px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -127,7 +128,6 @@ h1{
 	
 }
 
-
 swiper-container {
 	width: 100%;
 	position: relative;
@@ -195,49 +195,167 @@ swiper-slide img {
 }
 
 .desc__btn{
+	margin-top: 250px;
+	margin-left: 350%;
 	border: none;
 	width: 100%;
 	background: linear-gradient(90deg, rgba(125,133,213,1) 0%, rgba(148,187,233,1) 100%);
+	font-weight: bold;
+}
+
+.desc__btn i{
+	margin-right: 10px;
 }
 
 .img__overlay:hover{
 	opacity: 1;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 
 .img__title{
 	align-self: start;
-	font-size: 12px;
+	font-size: 10px;
 	font-weight: bold;
-	padding: 10px;
+	padding: 5px;
 }
 
 .img__txt,
 .desc_img__text{
+	width: 100%px;
 	font-size: 10px;
 	margin-top: .25em;
 	text-align: justify;
-	padding: 5px;
+	padding: 3px;
 	
 }
 
-.desc_img__desc{
-	font-size: 25px;
-	text-align: center;
-}
-
-
 .menu-desc a{
+	width: 100%;
 	margin-left: 15px;	
 }
 
 #destaque-capa{
 	width: 100%;
+	margin-bottom: 25px;
 }
 
 .noticias{
 	margin: 0;
 	background: rgb(125,133,213);
 	background: linear-gradient(90deg, rgba(125,133,213,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.feed-header{
+	padding: 10px;
+	color: crgb(63, 61, 61);
+}
+
+.tpk-popular{
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	
+}
+
+.tpk-popular h6{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+	margin-bottom: 15px;
+}
+
+
+h6 a{
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+h6 a:hover{
+	color: navy;
+	text-decoration: none;
+}
+
+p a{
+	text-decoration: none;
+	color:rgb(0, 0, 0);
+}
+
+.tpk-1,
+.tpk-2{
+	display: flex;
+	margin-bottom: 5px;
+	
+}
+
+.tpk-1 img,
+.tpk-2 img{
+	width: 269px;
+	height: 148px;
+}
+
+.tpk-txt{
+	font-size: 12px;
+	text-decoration: none;
+	padding: 0 10px;
+}
+
+.tpk-text a{
+	text-decoration: none;
+}
+
+.tpk-recente{
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+
+}
+
+.tpk-recente h6{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+	margin-bottom: 15px;
+}
+
+.rec-txt{
+	font-size: 12px;
+	text-decoration: none;
+	padding: 0 10px;
+}
+
+.rec-txt h5{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 10px;
+	color: rgb(0, 0, 0);
+	margin-bottom: 10px;
+}
+
+h5 a{
+	color: #000;
+	text-decoration: none;
+}
+
+.rec-1,
+.rec-2{
+	display: flex;
+	margin-bottom: 5px;
+}
+
+.rec-1 img,
+.rec-2 img{
+	width: 150px;
+	height: 100px;
+}
+
+.liveShare-component{
+	margin: 15px 0 15px 0;
+	padding: 0 10px;
+	background-color: #000;
 }
 
 footer {
@@ -258,7 +376,7 @@ footer .navbar-nav a {
 }
 
 footer .navbar-nav a:hover {
-	color: #9bf0e1;
+	color: #8ba9c2;
 	text-decoration: none;
 }
 
@@ -271,13 +389,29 @@ footer ul li {
 	margin: 0 5px;
 }
 
+footer i{
+	color: white;
+}
+
+footer i:hover{
+	color: #8ba9c2;
+}
+
 
 @media (max-width: 575.98px) {
 	.btn-custom {
 		margin: 10px 15px;
 		font-size: 1em;
 	}
+
+	.desc__btn{
+		margin-top: 50%;
+		margin-left: 95%;
+		width: 100%;
+	}
+
 }
+
 
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -286,6 +420,14 @@ footer ul li {
 	}
 	.btn-custom {
 		margin: 10px 15px;
+	}
+	.desc__btn{
+		margin-top: 10px;
+		margin-left: 25px;
+		border: none;
+		width: 100%;
+		background: linear-gradient(90deg, rgba(125,133,213,1) 0%, rgba(148,187,233,1) 100%);
+		font-weight: bold;
 	}
 }
 
