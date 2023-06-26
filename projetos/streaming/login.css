@@ -12,6 +12,10 @@ body{
     color: white;
 }
 
+.st-mid{
+    margin-left: 50%;
+}
+
 .pag-divider{
 	background: rgb(2,0,36);
 	background: linear-gradient(90deg, rgb(10, 58, 121) 16%, rgba(6,5,85,1) 29%, rgba(8,7,106,1) 40%, rgba(9,9,121,1) 47%, rgba(34,7,148,1) 55%, rgba(51,6,166,1) 67%, rgba(39,40,173,1) 79%, rgba(36,50,175,1) 83%, rgba(33,58,177,1) 86%, rgba(21,94,185,1) 100%);
@@ -25,27 +29,56 @@ header{
     width: 100%;
 }
 
-.navbar-brand img{
-    margin-left: 650px;
-}
 
 .content-wrapper{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     background-color: black;
-    display: flex;
+    flex: 1;
+    padding: 1.25rem 1.25rem 2.5rem;
+    overflow: hidden;
     flex-direction: column;
+    
+}
+
+.bx-all{
+    padding: 25px;
+}
+
+.all{
+    
+    display: block;
+    background-color: rgb(9, 12, 32);
+    
+}
+
+.all button{
+    margin-top: 5px;
+    margin-left: 40%;
+}
+
+.bx-nov{
+    display: flex;
+}
+
+.bx-nov p{
+    margin-left: 5px;
+    font-weight: bolder;
+}
+
+p{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    max-width: 31rem;
 }
 
 .wrapper{
     width: 500px;
-    height: 70px;
+    height:75px;
     position:relative;
 }
 
@@ -54,7 +87,7 @@ header{
     width: 100%;
     height: 100%;
     border: none;
-    border-bottom: 3px solid rgb(124, 189, 233);
+    border-bottom: 3px solid rgb(35, 42, 134);
     color: white;
     padding-left: 8px;
     outline: none;
@@ -65,18 +98,18 @@ label{
     position: absolute;
     top: 50%;
     left: 30px;
-    transform: translate(-50%);
+    transform: translate(-70%);
     transition: all .8s ease;
     font-size: 20px;
     pointer-events: none;
     color: white;
-    background-color: black;
+    background-color:rgb(9, 12, 32);
 }
 
 input:focus + label,
 input:valid + label{
     font-size: 15px;
     top: 0;
-    padding: 5px;
+    padding: 0px;
     
 }
