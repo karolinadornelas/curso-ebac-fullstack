@@ -12,10 +12,11 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+
     <header>
         <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
             <div class="container">
-                
+
                 <a href="./animefy.html" class="navbar-brand">
                 <img src="./img/bg-st-removebg-preview.png" width="142">
                 </a>
@@ -38,9 +39,9 @@
                         <li class="nav-item">
                             <a href="./login.html" class="nav-link"><i class="fa-solid fa-bookmark"></i></a>
                         </li>
-                        
+
                         <li class="nav-item">
-                            
+
                             <button id="profile-op" class="btn btn-trasnparent" data-bs-toggle="collapse" data-bs-target="#collapse-profile"><i class="fa-solid fa-user"></i></button>                            
                             <div id="collapse-profile" class="collapse collpase-horizontal text-black">
                                 <div id="espacoEntrar" class="card">
@@ -58,7 +59,7 @@
                                                 <p>Ainda não tem uma conta? Inscreva-se gratuitamente!</p>
                                             </a>
                                         </div>
-                                        
+
                                         <a id="premium-resgate" href="./premium.html">
                                             <div class="resgate-link">
                                                 <i class="fa-solid fa-crown"></i>
@@ -121,7 +122,7 @@
         </div>
     </section>
 
-
+    <!--carousel feed-->
     <div id="feed">
         <div id="mural" class="row">
             <div class="col-md-2"></div>
@@ -387,18 +388,22 @@
     </div>
 
     <div id="destaque" class="row bg-black">
-        <div class="col-md-2"></div>
-            
+        <div class="col-md-2"></div> 
         <div class="col-md-8">
             <div class="row">
                 <div class="destaque">
-                    <img id="destaque-capa" src="./img/capassa.png">
+                    <img src="./img/black clover.png">
+                    <div class="desc_img__overlay">
+                        <div class="desc_img__title">BLACK CLOVER</div>
+                        <p class="desc_img__txt"></p>
+                        <div class="menu__desc">
+                            <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>                         
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="col-md-2"></div>
-        
+        <div class="col-md-2"></div>    
     </div>
 
     <!--spotlight jujutsu-->
@@ -435,7 +440,6 @@
         <div class="col-md-2"></div>
     </div>
 
-
     <!--spotlight slime-->
     <div class="row" id="slime-spot-bk">
         <div class="col-md-2"></div>
@@ -470,8 +474,6 @@
         <div class="col-md-2"></div>
     </div>
 
-    
-
     <!--live share component-->
     <div class="row">
         <div class="col-12">
@@ -491,7 +493,7 @@
                             <div class="col-sm-10">
                                 <div class="liveShare-rooms">
                                     <div class="card" style="width: 180px;">
-                                        <img src="..." class="card-img-top img-fluid" alt="...">
+                                        <img src="./img/hm-removebg-preview.png" class="card-img-top img-fluid">
                                         <div class="card-body">
                                           <h5 class="card-title">EVENTO 1</h5>
                                             <div class="cd-info">
@@ -501,29 +503,7 @@
                                           <a href="#" class="btn btn-primary">Entrar</a>
                                         </div>
                                     </div>
-        
-                                    <div class="card" style="width: 180px;">
-                                        <img src="..." class="card-img-top img-fluid" alt="...">
-                                        <div class="card-body">
-                                          <h5 class="card-title">EVENTO 1</h5>
-                                            <div class="cd-info">
-                                            <p>criado por <a href="">@userum</a></p>
-                                            </div>
-                                          <p class="card-text">descrição</p>
-                                          <a href="#" class="btn btn-primary">Entrar</a>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="..." class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                          <h5 class="card-title">Card title</h5>
-                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                      </div>
                                 </div>
-                            </div>
                             <div class="col-sm-1"></div>
                         </div>
                         
@@ -537,108 +517,105 @@
     </div>
 
     <!--noticias-->
-    <div class="row">
-        <div class="col-md-12">
-            <div class="noticias">
-                <div  class="content-wrapper">
-                    <div class="feed-header">
-                        <h2><i class="fa-solid fa-newspaper"></i>NOTÍCIAS</h2>
-                        <div class="feed-divider"></div>
+    <div class="tpk-wrap">
+    <div class="row" id="tpk-not">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div class="feed-header">
+                    <h2><i class="fa-solid fa-newspaper"></i>NOTÍCIAS</h2>
+                    <div class="feed-divider"></div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+
+    <div class="row" id="ntpk">
+        <div class="col-2"></div>
+        <div class="col-md-3">
+            <div class="tpk-popular">
+            <h6>Popular</h6>
+                <div class="tpk-1">
+                    <img src="./img/oshi-no-ko-tpk.jpg.webp">
+                    <div class="tpk-txt">
+                        <h6><a href="">"Idol", abertura de Oshi no Ko, fica no topo
+                        do chart global da Apple Music!</a></h6>
+                        <p>A música alcançou hoje, a primeira posição no top 100 global
+                        da Apple music, há algumas semanas, ela pegou liderança... <a href="" class="continuar-lendo">continuar lendo</a>
+                        </p>
                     </div>
-                    
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="tpk-popular">
-                                <h6>Popular</h6>
-                                <div class="tpk-1">
-                                    <img src="./img/oshi-no-ko-tpk.jpg.webp">
-                                    <div class="tpk-txt">
-                                        <h6><a href="">"Idol", abertura de Oshi no Ko, fica no topo
-                                        do chart global da Apple Music!</a></h6>
-                                        <p>A música alcançou hoje, a primeira posição no top 100 global
-                                        da Apple music, há algumas semanas, ela pegou liderança... <a href="" class="continuar-lendo">continuar lendo</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                    
-                                <div class="tpk-2">
-                                        <img src="./img/demon-slayer-hashiras.webp">
-                                        <div class="tpk-txt">
-                                        <h6><a href="">Teaser destaca hashiras da próxima temporada de Demon Slayer</a></h6>
-                                        <p>Um teaser divulgado após a exibição do último episódio da terceira temporada de 
-                                        Demon Slayer: Kimetsu no Yaiba, vemos todos os hashiras reunidos... <a href="" class="continuar-lendo">continuar lendo</a>
-                                        </p>
-                                    </div>
-                                </div>
+                </div>
+                                        
+                <div class="tpk-2">
+                    <img src="./img/demon-slayer-hashiras.webp">
+                    <div class="tpk-txt">
+                        <h6><a href="">Teaser destaca hashiras da próxima temporada de Demon Slayer</a></h6>
+                        <p>Um teaser divulgado após a exibição do último episódio da terceira temporada de 
+                        Demon Slayer: Kimetsu no Yaiba, vemos todos os hashiras reunidos... <a href="" class="continuar-lendo">continuar lendo</a>
+                        </p>
+                    </div>
+                </div>
 
-                                <div class="tpk-2">
-                                    <img src="./img/attack-on-titan.jpg">
-                                    <div class="tpk-txt">
-                                        <h6><a href="">Diretor comenta sobre o último episódio de Attack on Titan</a></h6>
-                                        <p>Em uma carta aos fãs pela Comick Book, o diretor de Attack on Titan, Yuichiro
-                                        Hayashi, comentou sobre o último episódio do anime... <a href="" class="continuar-lendo">continuar lendo</a>
-                                        </p>
-                                    </div>
-                                </div>
+                <div class="tpk-2">
+                    <img src="./img/attack-on-titan.jpg">
+                    <div class="tpk-txt">
+                        <h6><a href="">Diretor comenta sobre o último episódio de Attack on Titan</a></h6>
+                        <p>Em uma carta aos fãs pela Comick Book, o diretor de Attack on Titan, Yuichiro
+                        Hayashi, comentou sobre o último episódio do anime... <a href="" class="continuar-lendo">continuar lendo</a>
+                        </p>
+                    </div>
+                </div>
 
-                            </div>
-                        </div>
+            </div>
+        </div>
 
-                        <div class="col-md-6">
-                            <div class="tpk-recente">
-                                <h6>Recente</h6>
+        <div class="col-md-5">
+            <div class="tpk-recente">
+                <h6>Recente</h6>
+                <div class="rec-1">
+                    <img src="./img/oshi-no-ko-tpk.jpg.webp">
+                    <div class="rec-txt">
+                        <h5><a href="">"Idol", abertura de Oshi no Ko, fica no topo
+                        do chart global da Apple Music!</a></h5>
+                        <p>A música alcançou hoje, a primeira posição no top 100 global
+                        da Apple music, há algumas semanas, ela pegou liderança... <a href="" class="continuar-lendo">continuar lendo</a>
+                        </p>
+                    </div>
+                </div>
+                            
+                <div class="rec-1">
+                    <img src="./img/oshi-no-ko-tpk.jpg.webp">
+                    <div class="rec-txt">
+                        <h5><a href="">"Idol", abertura de Oshi no Ko, fica no topo
+                        do chart global da Apple Music!</a></h5>
+                        <p>A música alcançou hoje, a primeira posição no top 100 global
+                        da Apple music, há algumas semanas, ela pegou liderança... <a href="" class="continuar-lendo">continuar lendo</a>
+                        </p>
+                    </div>
+                </div>
 
-                                <div class="rec-1">
-                                    <img src="./img/oshi-no-ko-tpk.jpg.webp">
-                                    <div class="rec-txt">
-                                        <h5><a href="">"Idol", abertura de Oshi no Ko, fica no topo
-                                        do chart global da Apple Music!</a></h5>
-                                        <p>A música alcançou hoje, a primeira posição no top 100 global
-                                        da Apple music, há algumas semanas, ela pegou liderança... <a href="" class="continuar-lendo">continuar lendo</a>
-                                        </p>
-                                    </div>
-                                </div>
-
-
-                                <div class="rec-1">
-                                    <img src="./img/oshi-no-ko-tpk.jpg.webp">
-                                    <div class="rec-txt">
-                                        <h5><a href="">"Idol", abertura de Oshi no Ko, fica no topo
-                                        do chart global da Apple Music!</a></h5>
-                                        <p>A música alcançou hoje, a primeira posição no top 100 global
-                                        da Apple music, há algumas semanas, ela pegou liderança... <a href="" class="continuar-lendo">continuar lendo</a>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="rec-1">
-                                    <img src="./img/shuumatsu-no-valkyrie.jpg.webp">
-                                    <div class="rec-txt">
-                                        <h5><a href="">Parte 2 da segunda temporada de Shuumatsu no Valkyrie revelou
-                                            visual e data de estreia!
-                                        </a></h5>
-                                        <p>Foi revelado a data de estreia e uma nova imagem promocional de Record of Ragnarok<a href="" class="continuar-lendo">continuar lendo</a>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="rec-1">
-                                    <img src="./img/oshi-no-ko-tpk.jpg.webp">
-                                    <div class="rec-txt">
-                                        <h5><a href="">"Idol", abertura de Oshi no Ko, fica no topo
-                                        do chart global da Apple Music!</a></h5>
-                                        <p>A música alcançou hoje, a primeira posição no top 100 global
-                                        da Apple music, há algumas semanas, ela pegou liderança... <a href="" class="continuar-lendo">continuar lendo</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>   
+                <div class="rec-1">
+                    <img src="./img/shuumatsu-no-valkyrie.jpg.webp">
+                    <div class="rec-txt">
+                        <h5><a href="">Parte 2 da segunda temporada de Shuumatsu no Valkyrie revelou
+                        visual e data de estreia!</a></h5>
+                        <p>Foi revelado a data de estreia e uma nova imagem promocional de Record of Ragnarok<a href="" class="continuar-lendo">continuar lendo</a></p>
+                    </div>
+                </div>
+                
+                <div class="rec-1">
+                    <img src="./img/oshi-no-ko-tpk.jpg.webp">
+                    <div class="rec-txt">
+                        <h5><a href="">"Idol", abertura de Oshi no Ko, fica no topo
+                        do chart global da Apple Music!</a></h5>
+                        <p>A música alcançou hoje, a primeira posição no top 100 global
+                        da Apple music, há algumas semanas, ela pegou liderança... <a href="" class="continuar-lendo">continuar lendo</a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-
+        <div class="col-2"></div>
+    </div>
     </div>
 
 
