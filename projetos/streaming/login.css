@@ -1,3 +1,5 @@
+/*registro*/
+
 *
 *::before,
 *::after{
@@ -12,8 +14,9 @@ body{
     color: white;
 }
 
-.st-mid{
-    margin-left: 50%;
+.login-header{
+    display: flex;
+    justify-content: center;
 }
 
 .pag-divider{
@@ -24,13 +27,9 @@ body{
 
 }
 
-header{
-    background: black;
-    width: 100%;
-}
-
 
 .content-wrapper{
+    margin-top: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,32 +53,20 @@ header{
     
 }
 
-.all button{
-    margin-top: 5px;
-    margin-left: 40%;
+button{
+    margin: 25px;
 }
 
 .bx-nov{
     display: flex;
 }
 
-.bx-nov p{
-    margin-left: 5px;
-    font-weight: bolder;
-}
-
-p{
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    max-width: 31rem;
-}
 
 .wrapper{
     width: 500px;
     height:75px;
     position:relative;
+    text-transform: uppercase;
 }
 
 .wrapper input{
@@ -94,21 +81,23 @@ p{
 
 }
 
+
 label{
     position: absolute;
     top: 50%;
     left: 30px;
     transform: translate(-70%);
     transition: all .8s ease;
-    font-size: 20px;
+    font-size: 12px;
     pointer-events: none;
     color: white;
     background-color:rgb(9, 12, 32);
 }
 
-input:focus + label,
-input:valid + label{
-    font-size: 15px;
+
+
+input:focus + label{
+    font-size: 10px;
     top: 0;
     padding: 0px;
     
