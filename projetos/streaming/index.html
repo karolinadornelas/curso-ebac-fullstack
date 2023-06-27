@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-    <title>animefy - plataforma de streaming</title>
+    <title>Animefy - Plataforma de Streaming</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./img/favicon-32x32.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
@@ -29,14 +30,14 @@
 
     <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
         <div class="container-fluid">
-            <a href="./animefy.html" class="navbar-brand fixed"><img src="./img/bg-st-removebg-preview.png" width="142"></a>
+            <a href="./index.html" class="navbar-brand fixed"><img src="./img/bg-st-removebg-preview.png" width="142" class="img-fluid"></a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal"><i class="fas fa-bars text-white"></i></button>
 
             <div class="collapse navbar-collapse fixed" id="nav-principal">
                 <ul class="navbar-nav ml-auto fixed">  
                     <li class="nav-item">
                         <button id="profile-op" class="btn btn-trasnparent" data-bs-toggle="collapse" data-bs-target="#collapse-profile"><i class="fa-solid fa-user"></i></button>                            
-                        <div id="collapse-profile" class="collapsecollapse-horizontal text-black">
+                        <div id="collapse-profile" class="collapse collapse-horizontal text-black">
                             <div id="espacoEntrar" class="card">
                                 <div class="card-body">
                                     <div id="entrar"class="md-2">
@@ -49,7 +50,7 @@
                                     <div class="entrar-divider"></div>
                             
                                     <div id="entrar" class="md-2">
-                                        <a href="./login.html">
+                                        <a href="./registro.html">
                                             <b>REGISTRAR</b>
                                             <p>Ainda não tem uma conta? Inscreva-se gratuitamente!</p>
                                         </a>
@@ -94,7 +95,7 @@
 
                             <div class="carousel-item active">
                                 <h1>RECOMENDAÇÕES DA SEMANA</h1>
-                                <a href="" class="btn btn-lg btn-custom btn-branco">
+                                <a href="#destaque" class="btn btn-lg btn-custom btn-branco">
                                     aproveite nossa seleção
                                 </a>
                                 <a href="" class="btn btn-lg btn-custom btn-roxo">
@@ -104,14 +105,14 @@
 
                             <div class="carousel-item">
                                 <h1>LANÇAMENTOS DA TEMPORADA</h1>
-                                <a href="" class="btn btn-lg btn-custom btn-branco">
+                                <a href="#bx-trailer" class="btn btn-lg btn-custom btn-branco">
                                     assistir
                                 </a>
                             </div>
 
                             <div class="carousel-item">
                                 <h1>ARTISTA DESTAQUE</h1>
-                                <a href="" class="btn btn-lg btn-custom btn-branco">
+                                <a href="https://open.spotify.com/artist/64tJ2EAv1R6UaZqc4iOCyj" class="btn btn-lg btn-custom btn-branco">
                                     <i class="fas fa-music"></i> ouça agora
                                 </a>
                             </div>
@@ -130,6 +131,7 @@
         </div>
     </section>
 
+    
     <!--carousel feed-->
     <div id="feed">
         <div id="mural" class="row">
@@ -139,6 +141,380 @@
                 <div class="feed-header">
                     <h2>Títulos Populares</h2>
                     <p>Confira os envios populares que estão disponíveis gratuitamente!</p>
+                    <div class="feed-divider"></div>
+                </div>
+                
+    
+                <swiper-container class="mySwiper" slides-per-view="6" centered-slides="true" navigation="true" space-between="30" grab-cursor="true" loop="true">
+                    <swiper-slide>
+                        <img src="./img/an-01.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">Sugar Apple Fairy Tale</div>
+                            <p class="img__txt">Amizade! Mesmo que proibido, é isso que Anne quer de Charlie, 
+                                sua fada guarda-costas, ainda que ele não goste tanto da ideia.</p>
+                            <div class="menu__desc_swi">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                            
+                        </div>
+                    </swiper-slide>
+                    
+                    <swiper-slide>
+                        <img src="./img/an-02.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">Sen No Kiseki</div>
+                            <p class="img__txt">Para proteger sua terra natal, e se diferenciar de seu avô Vlad,
+                                Lavi se alista no Jaegers do Norte.</p>
+                            <div class="menu__desc_swi">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                        
+                    <swiper-slide>
+                        <img src="./img/an-03.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">A Reincarnação do Exorcista Mais Forte de Outro Mundo</div>
+                            <p class="img__txt">Decidido a ser feliz em sua nova vida, ele usa uma técnica
+                                para renascer em outro mundo!
+                            </p>
+                            <div class="menu__desc_swi">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                        
+                    <swiper-slide>
+                        <img src="./img/an-04.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">Ayakashi</div>
+                            <p class="img__txt">O jovem exorcista ninja Matsuri passa os seus dias lutando 
+                                contra ayakashi para proteger sua amiga de infância, Suzu.</p>
+                            <div class="menu__desc_swi">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+    
+                    <swiper-slide>
+                        <img src="./img/an-05.png">
+                        <div class="img__overlay">
+                            <div class="img__title">Bungou Stray Dogs</div>
+                            <p class="img__txt">Atsushi Nakajima é um menino órfão que foi expulso do orfanato. Sem lugar pra ir
+                                acaba encontrando o suicida Dazai.
+                            </p>
+                            <div class="menu__desc_swi">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+    
+                    <swiper-slide>
+                        <img src="./img/an-06.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">Spy Classroom</div>
+                            <p class="img__txt">Lili é uma boa aluna na modalidade teórica, mas é horrivel na prática
+                                ela precisa melhorar para ser uma oa espiã.</p>
+                            <div class="menu__desc_swi">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+    
+                    <swiper-slide>
+                        <img src="./img/an-07.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">AN-07</div>
+                            <p class="img__txt">aqui descreve o enredo do anime</p>
+                            <div class="menu__desc_swi">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+    
+                    <swiper-slide>
+                        <img src="./img/an-08.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">Salvando 80.000 de Ouro em Outro Mundo para Minha Aposentadoria</div>
+                            <p class="img__txt">Mitsuha foi enviada para outro mundo e pretende acumular 80.000!</p>
+                            <div class="menu__desc_swi">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+    
+                    <swiper-slide>
+                        <img src="./img/an-09.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">In/Spectre</div>
+                            <p class="img__txt">Iwanafga Kokoto se tornou a Deusa da Sabedoria dos seres sobrenaturais,
+                                e leva a vida resolvendo os problemas deles.
+                            </p>
+                            <div class="menu__desc_swi">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <img src="./img/an-10.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">Nier: Automata Ver1:1</div>
+                            <p class="img__txt">Em um futuro distante, onde a humanidade é derrotada pela lua
+                                 diante da força de formas de vida mecânicas que os alienígenas...</p>
+                            <div class="menu__desc_swi">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <img src="./img/an-11.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">AN-11</div>
+                            <p class="img__txt">aqui descreve o enredo do desenho</p>
+                            <div class="menu__desc_swi">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <img src="./img/an-12.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">Revenge</div>
+                            <p class="img__txt">Enquanto Usui Yuen investiga uma série de assassinatos cometidos 
+                                contra o grande clã Satsuma, ele conhece um sobrevivente de uma dos ataques.</p>
+                            <div class="menu__desc_swi">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <img src="./img/an-13.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">Shuumatsu no Valkyrie</div>
+                            <p class="img__txt">O dia do julgamento chegou e os deuses precisam decidir mais uma 
+                                vez se a humanidade pode seguir viva
+                                por mais mil anos ou merece ser exterminada.
+                            </p>
+                            <div class="menu__desc_swi">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <img src="./img/an-14.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">Gokushifudou: Tatsu Imortal</div>
+                            <p class="img__txt">Nosso protagonista é um ex-yakuza que se tornou uma dona de casa. 
+                                Ele se chamava Tatsu Imortal e agora é o marido perfeito!</p>
+                            <div class="menu__desc_swi">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <img src="./img/an-15.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">Attack On Titan</div>
+                            <p class="img__txt">Para escapar dos titãs, a humanidade se refugiou em cidades 
+                                cercadas por enormes muralhas.</p>
+                            <div class="menu__desc_swi">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <img src="./img/an-16.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">Akebi's Sailor Uniform</div>
+                            <p class="img__txt">Akebi Komichi consegue uma vaga a Academia ROubai e não cconsegue 
+                                para de pensar no lindo uniforme que irá usar.
+                            </p>
+                            <div class="menu__desc_swi">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <img src="./img/an-17.jpg">
+                        <div class="img__overlay">
+                            <div class="img__title">Joran: The Princess of Snow and Blood</div>
+                            <p class="img__txt">O anime segue as atividades da "Nue", uma organização de executoresdo 
+                                shogunato que impõem azs ordens do governo.</p>
+                            <div class="menu__desc_swi">
+                                <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-bookmark"></i></button>
+                                <button class="btn btn-transparent"><i class="fa-solid fa-plus"></i></button>
+
+                            </div>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+        
+            </div>
+            
+            <div class="col-md-2"></div> 
+
+        </div>
+    </div>
+
+    <!--spotlight filmes-->
+    <!----<div class="row" id="slime-spot-bk">
+        <div class="col-md-2"></div>
+        <div class="col-md-8" id="bk-slime-spotlight">
+            <div class="spotlight-eps text-white">
+                <h4>Envios Recentes</h4>
+                <h6>Filmes recentemente adicionados</h6>
+                            
+                <div class="bx-ep">
+                    <div class="video-1">
+                        <iframe width="170" src="https://www.youtube.com/embed/fEiX_69tu2I"></iframe>
+                         <a href=""><h5>Code Geass, Re:surrection</h5></a>
+                     </div>
+
+                    <div class="video-1">
+                        <iframe width="170" src="https://www.youtube.com/embed/MXlw5Bb0CRc"></iframe>
+                         <a href=""><h5>Psyxho Pass: Sinners of...</h5></a>
+                    </div>
+
+                    <div class="video-1">
+                        <iframe width="170" src="https://www.youtube.com/embed/2QXbWuGhMdw"></iframe>
+                         <a href=""><h5>Fruits Basket: Prelude</h5></a>
+                         
+                    </div>
+
+                    <div class="video-1">
+                        <iframe width="170" src="https://www.youtube.com/embed/m-UdkLhtPeM"></iframe>
+                         <a href=""><h5>Hotarubi no mori e</h5></a>
+                    </div>
+
+                    <div class="video-1">
+                        <iframe width="170" src="https://www.youtube.com/embed/359noIH-wNo"></iframe>
+                         <a href=""><h5>Jujustsu Kaisen 0</h5></a>
+                    </div>              
+                </div>
+                    
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>-->
+
+
+    <!--spotlight titulos-->
+    <div class="row" id="tutulos__spot">
+        <div class="col-md-2"></div>
+            <div class="col-md-8" id="bk-spotlight">
+                <div class="row" id="bx-wrp-tt">
+                    <div class="col-sm-6">
+                        <div class="titulo-1">
+                            <img src="./img/TR-spot.jpg" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="spotlight-txt-ttl">
+                            <a href=""><h4>Tokyo Revengers</h4></a>
+                            <h6>DUB | LEG</h6>
+                            <p>
+                                Tokyo Revengers é um anime de ação e drama que conta a história de Takemichi 
+                                Hanagaki, um fracassado que descobre que sua ex-namorada foi
+                                assassinada. Ele então tem a chance de volar ao passado e tentar mudar o futuro. 
+                                pra isso,
+                                ele se envolve com a Toman, uma gangue de motoqueiros juvenis liderada por Mikey
+                                e Draken, e enfrenta vários conflitos e perigos. Ele também conta com a ajuda de
+                                Naoto, o irmão mais novo de sua ex-namorada, que pode fazer ele viajar no tempo
+                                ao apertar sua mão.
+                            </p>
+
+                            <a href="" class="btn btn-sm btn-spot"><i class="fa-solid fa-play"></i>ASSISTIR T1 E1</a>
+                            <a href="" class="btn btn-sm btn-save-spot"><i class="fa-regular fa-bookmark"></i></i>ADICIONAR À LISTA</a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="feed-divider"></div>
+
+                <div class="row" id="bx-wrp-tt">
+                    <div class="col-sm-6">
+                        <div class="titulo-1">
+                            <img src="./img/jkr-spot.jpg" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="spotlight-txt-ttl">
+                            <a href=""><h4>Hell's Paradise</h4></a>
+                            <h6>DUB | LEG</h6>
+                            <p>
+                                Hell’s Paradise é um anime de ação e fantasia que conta a história de Gabimaru,
+                                um ninja sobre-humano que é condenado à morte por seus crimes, mas não consegue
+                                morrer. Ele recebe uma chance de obter o perdão se conseguir encontrar o Elixir
+                                da Vida em uma ilha misteriosa, mas ele não é o único que busca esse tesouro. 
+                                Acompanhado de uma carrasca chamada Yamada Asaemon Sagiri, ele enfrenta perigos 
+                                e inimigos na ilha, que esconde segredos e horrores inimagináveis.
+                            </p>
+
+                            <a href="" class="btn btn-sm btn-spot"><i class="fa-solid fa-play"></i>ASSISTIR T1 E1</a>
+                            <a href="" class="btn btn-sm btn-save-spot"><i class="fa-regular fa-bookmark"></i></i>ADICIONAR À LISTA</a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        <div class="col-md-2"></div>
+    </div>
+
+    <!--carousel romance-->
+    <div id="feed">
+        <div id="mural" class="row">
+            <div class="col-md-2"></div>
+            
+            <div class="col-md-8">
+                <div class="feed-header">
+                    <h2>Romance</h2>
+                    <p>Confira esses títulos de aquecer o coração 🤍</p>
                     <div class="feed-divider"></div>
                 </div>
                 
@@ -395,26 +771,6 @@
         </div>
     </div>
 
-    <!--destaque 1-->
-    <div id="destaque" class="row bg-black">
-        <div class="col-md-2"></div> 
-        <div class="col-md-8">
-            <div class="row">
-                <div class="destaque">
-                    <img src="./img/black-clover.jpg">
-                    <div class="desc_img__overlay">
-                        <div class="desc_img__title">BLACK CLOVER</div>
-                        <p class="desc_img__txt"></p>
-                        <div class="menu__desc">
-                            <button class="btn btn-transparent"><i class="fa-solid fa-play"></i></button>                         
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-2"></div>    
-    </div>
-
     <!--spotlight jujutsu-->
     <div class="row" id="jjk-spot-bk">
         <div class="col-md-2"></div>
@@ -448,6 +804,36 @@
             </div>
         <div class="col-md-2"></div>
     </div>
+
+
+    <!--destaque 1-->
+    <div id="destaque" class="row bg-black">
+        <div class="col-md-2"></div> 
+        <div class="col-md-8">
+            <div class="row">
+                <div class="destaque">
+                    <img src="./img/black-clover.jpg">
+                    <div class="desc_img__overlay">
+                        <div class="desc_img__title">BLACK CLOVER: A Espada do Rei Mago</div>
+                        <p class="desc_img__txt">Em Black Clover: A Espada do Rei Mago, 
+                            Asta nasceu em um mundo mágico, e tudo aqui gira em torno da magia.
+                            Infelizmente, ele nasceu sem poderes mágicos. Mas isso não o 
+                            impede de se tornar um Rei Mago. Tudo o que ele precisa fazer é 
+                            superar todas as adversidades, provar seu poder e manter um 
+                            juramento com seus amigos. Inspirado no mangá sob a supervisão
+                            do autor do mangá original, o longa contará pela 
+                            primeira vez a história do Rei Mago.
+                        </p>
+                        <div class="menu__desc">
+                            <button id="assistir-agr" class="btn"><i class="fa-solid fa-play"></i>ASSISTIR AGORA</button>                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>    
+    </div>
+
 
     <!--spotlight slime-->
     <div class="row" id="slime-spot-bk">
@@ -499,30 +885,108 @@
 
                         <div class="row">
                             <div class="col-sm-1"></div>
-                            <div class="col-sm-10">
+                            <div class="col-sm-10" >
                                 <div class="liveShare-rooms">
                                     <div class="card" style="width: 180px;">
                                         <img src="./img/hm-removebg-preview.png" class="card-img-top img-fluid">
                                         <div class="card-body">
-                                          <h5 class="card-title">EVENTO 1</h5>
+                                            <h5 class="card-title">EVENTO 1</h5>
                                             <div class="cd-info">
-                                            <p>criado por <a href="">@userum</a></p>
+                                                <p>criado por <a href="">@userum</a></p>
+                                                <p class="card-text">descrição</p>
                                             </div>
-                                          <p class="card-text">descrição</p>
-                                          <a href="#" class="btn btn-primary">Entrar</a>
+
+                                            <div class="cd-exclusivo">
+                                                <img src="./img/favicon-16x16.png">
+                                                <P>exclusivo para membros premium</P>
+                                            </div>
                                         </div>
                                     </div>
+
+                                    <div class="card" style="width: 180px;">
+                                        <img src="./img/hm-removebg-preview.png" class="card-img-top img-fluid">
+                                        <div class="card-body">
+                                            <h5 class="card-title">EVENTO 2</h5>
+                                            <div class="cd-info">
+                                                <p>criado por <a href="">@usertwo</a></p>
+                                                <p class="card-text">descrição</p>
+                                            </div>
+
+                                            <div class="cd-free">
+                                                <img src="./img/favicon-16x16.png" class="zoom-in">
+                                                <P>gratuito para comunidade</P>                                            
+                                            </div>
+                                            <a href="./login.html" class="btn btn-scp">Participar</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card" style="width: 180px;">
+                                        <img src="./img/hm-removebg-preview.png" class="card-img-top img-fluid">
+                                        <div class="card-body">
+                                            <h5 class="card-title">EVENTO 2</h5>
+                                            <div class="cd-info">
+                                                <p>criado por <a href="">@usertwo</a></p>
+                                                <p class="card-text">descrição</p>
+                                            </div>
+
+                                            <div class="cd-free">
+                                                <img src="./img/favicon-16x16.png" class="zoom-in">
+                                                <P>gratuito para comunidade</P>                                            
+                                            </div>
+                                            <a href="./login.html" class="btn btn-scp">Participar</a>
+                                        </div>
+                                    </div>
+
+                                    <div id="bx-more">
+                                        <a href="" class="icone-plus"><i class="fa-solid fa-circle-plus"></i></a>
+                                        <p>ver programação completa</p>
+                                    </div>
                                 </div>
-                            <div class="col-sm-1"></div>
+
+                                
+                            </div>
+                            <div class="col-sm-1">
+                                
+                            </div>
                         </div>
-                        
-                          
                     </div>
                 </div>
                 <div class="col-md-2"></div>
             </div>
-            
         </div>
+    </div>
+    <!--spotlight slime-->
+    <div class="row" id="slime-spot-bk">
+    <div class="col-md-2"></div>
+        <div class="col-md-8" id="bk-slime-spotlight">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="bx-slime-spotlight">
+                        <img src="./img/slime-spot.png" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="spotlight-txt">
+                        <a href=""><h4>That Time I Got Reincarnated as a Slime</h4></a>
+                        <h6>DUB | LEG</h6>
+                        <p>
+                            Mikami Satoru, funcionário de uma megacorporação, é apunhalado
+                            por um assassino nas ruas e renasce num mundo paralelo... 
+                            Mas ele renasce como um slime! Jogado neste novo mundo com o nome
+                            Rimuru, ele assume a missão de criar um mundo que seja acolhedor 
+                            para todas as raças.
+                        </p>
+
+                        <a href="" class="btn btn-sm btn-spot"><i class="fa-solid fa-play"></i>ASSISTIR T1 E1</a>
+                        <a href="" class="btn btn-sm btn-save-spot"><i class="fa-regular fa-bookmark"></i></i>ADICIONAR À LISTA</a>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    <div class="col-md-2"></div>
     </div>
 
     <!--carousel romance-->
@@ -532,8 +996,8 @@
             
             <div class="col-md-8">
                 <div class="feed-header">
-                    <h2>Títulos Populares</h2>
-                    <p>Confira os envios populares que estão disponíveis gratuitamente!</p>
+                    <h2>Romance</h2>
+                    <p>Confira esses títulos de aquecer o coração 🤍</p>
                     <div class="feed-divider"></div>
                 </div>
                 
@@ -790,29 +1254,26 @@
         </div>
     </div>
 
+
     <!--spotlight trailer-->
     <div class="row" id="bx-trailer">
-        <div class="col-md-2"></div>
-        <div class="col-md-8" id="bk-trailer">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" id="bk-trailer">
+            <iframe width="100%" height="315"src="https://www.youtube.com/embed/lSuu3h8auUY"></iframe>   
             
-            <video width="100%" controls>
-                <source src="" type="video/mp4">
-            </video>
-           
-   
         </div>
-        <div class="col-md-2"></div>
+        <div class="col-md-3"></div>
     </div>
 
-    <!--carousel romance-->
+    <!--carousel lançamentos-->
     <div id="feed">
         <div id="mural" class="row">
             <div class="col-md-2"></div>
             
             <div class="col-md-8">
                 <div class="feed-header">
-                    <h2>Títulos Populares</h2>
-                    <p>Confira os envios populares que estão disponíveis gratuitamente!</p>
+                    <h2>Lançamentos</h2>
+                    <p>Confira os novos envios e atualizações das suas séries favoritas!</p>
                     <div class="feed-divider"></div>
                 </div>
                 
@@ -1076,8 +1537,8 @@
             
             <div class="col-md-8">
                 <div class="feed-header">
-                    <h2>Títulos Populares</h2>
-                    <p>Confira os envios populares que estão disponíveis gratuitamente!</p>
+                    <h2>Comédia</h2>
+                    <p>Confira so títulos selecionados para te deixar de bom humor!</p>
                     <div class="feed-divider"></div>
                 </div>
                 
@@ -1334,57 +1795,7 @@
         </div>
     </div>
 
-    <!--spotlight filmes-->
-    <div class="row" id="slime-spot-bk">
-        <div class="col-md-2"></div>
-        <div class="col-md-8" id="bk-slime-spotlight">
-            <div class="spotlight-eps">
-                <a href=""><h4>Envios Recentes</h4></a>
-                <h6>Filmes recentemente adicionados</h6>
-                            
-                <div class="bx-ep">
-                            <div class="video-1">
-                                <video width="170" controls>
-                                    <source src="" type="video/mp4">
-                                </video>
-                                <h5>Code Geass, Re:surrection</h5>
-                            </div>
-
-                            <div class="video-1">
-                                <video width="170" controls>
-                                    <source src="" type="video/mp4">
-                                </video>
-                                <h5>Psyxho Pass: Sinners of...</h5>
-                            </div>
-
-                            <div class="video-1">
-                                <video width="170" controls>
-                                    <source src="" type="video/mp4">
-                                </video>
-                                <h5>Fruits Basket: Prelude</h5>
-                                
-                            </div>
-
-                            <div class="video-1">
-                                <video width="170" controls>
-                                    <source src="" type="video/mp4">
-                                </video>
-                                <h5>Hotarubi no mori e</h5>
-                            </div>
-
-                            <div class="video-1">
-                                <video width="170" controls>
-                                    <source src="" type="video/mp4">
-                                </video>
-                                <h5>Jujustsu Kaisen 0</h5>
-                            </div>
-                            
-                </div>
-                    
-            </div>
-        </div>
-        <div class="col-md-2"></div>
-    </div>
+    
 
     <!--noticias-->
     <div class="tpk-wrap">
@@ -1400,7 +1811,7 @@
     </div>
 
     <div class="row" id="ntpk">
-        <div class="col-2"></div>
+        <div class="col-md-2"></div>
         <div class="col-md-3">
             <div class="tpk-popular">
             <h6>Popular</h6>
@@ -1485,7 +1896,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-2"></div>
+        <div class="col-md-2"></div>
     </div>
     </div>
 
@@ -1496,8 +1907,8 @@
             
             <div class="col-md-8">
                 <div class="feed-header">
-                    <h2>Títulos Populares</h2>
-                    <p>Confira os envios populares que estão disponíveis gratuitamente!</p>
+                    <h2>Suspense</h2>
+                    <p>Confira essa seleção de animes para assistir no escuro..</p>
                     <div class="feed-divider"></div>
                 </div>
                 
