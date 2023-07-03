@@ -17,10 +17,12 @@
           <h4 align="center">Acompanhamento</h4> 
       
   <li><a href="https://receitinha-eight.vercel.app/">ver projeto</a> | blog simples com utilização de imagens de fontes externas e um formulário para preencher. {menu de navegação funcionando com 3 páginas de conteúdo ('home', 'sobre' e 'pergunte') </li><br>
+
+  <li><a href="https://tarefa-streaming-amfy.vercel.app/index.html">"Animefy"</a> | landing page de streaming com bootstrap e a ferramenta externa SWIPER; </li><br>
         
   <li><a href="https://btsrp-adv.vercel.app/">ver exercício</a> | blog com bootstrap responsivo</li> <br>
         
-  <li><a href="https://agenda-ivory.vercel.app/">ver exercício</a> | agenda telefônica, usuário pode inserir contatos.  {problemas: não possui botão de editar ou de deletar contatos, não apresenta limite de contatos. </li><br>
+  <li><a href="https://agenda-ivory.vercel.app/">ver exercício</a> | agenda telefônica, usuário pode inserir contatos.  {problemas: não possui botão de editar ou de deletar contatos, não aprresenta limite de contatos. </li><br>
         
   <li><a href="https://galeria-fawn.vercel.app/">ver exercício</a> | insersão de novas imagens via link {problemas: não tem botão para deletar fotos e não é possível excluir as fotos default.</li> <br>
         
