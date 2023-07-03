@@ -22,7 +22,7 @@
         
   <li><a href="https://btsrp-adv.vercel.app/">ver exercício</a> | blog com bootstrap responsivo</li> <br>
         
-  <li><a href="https://agenda-ivory.vercel.app/">ver exercício</a> | agenda telefônica, usuário pode inserir contatos.  {problemas: não possui botão de editar ou de deletar contatos, não aprresenta limite de contatos. </li><br>
+  <li><a href="https://agenda-ivory.vercel.app/">ver exercício</a> | agenda telefônica, usuário pode inserir contatos.  {problemas: não possui botão de editar ou de deletar contatos, não apresenta limite de contatos. </li><br>
         
   <li><a href="https://galeria-fawn.vercel.app/">ver exercício</a> | insersão de novas imagens via link {problemas: não tem botão para deletar fotos e não é possível excluir as fotos default.</li> <br>
         
