@@ -40,13 +40,14 @@
   <br>
     <hr>
     <h5>Ferramentas úteis<h5>
+  <ul>
   <li>Ouch!</li>
   <li>CSS Gradient.io</li>
   <li>Flaticon</li>
   <li>Coolors</li>
   <li>Notion</li>
   <li>SwiperJS</li>
-
+  </ul>
 
   
   
