@@ -1,0 +1,86 @@
+*{
+    background-color: rgba(255, 255, 255, 0.164)
+}
+
+body{
+    height: 100%;
+	overflow-x: hidden;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+/*folder shape*/
+.tip{
+    border-bottom: 25px solid rgb(255, 255, 255);
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 350px;
+    padding: 10px 0 0 10px;
+}
+
+.tip a{
+    font-size: small;
+}
+
+.folder{
+    height: 300px;
+    width: 450px;
+    background:rgb(255, 255, 255);
+    border-top: 1px solid rgb(228, 223, 223);
+}
+
+.folder p{
+    position: relative;
+}
+
+.folder img{
+    margin: 50px 0 0 200px;
+    width: 250px;
+    background-color: transparent;
+    position: absolute;
+}
+
+/*folder shape*/
+
+.main-folders{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;    
+}
+
+.item-folder{
+    margin: 25px;
+}
+
+
+.sidebar{
+    position: fixed;
+    height: 100%;
+
+    border-left: 1px solid black;
+}
+
+.portal{
+    position: relative;
+    overflow: auto;
+    z-index: 1;
+}
+
+.portal p{
+    border: 1px solid black;
+    margin: 20px;
+    height: 100px;
+    width: 180px;
+    position: relative;
+}
+
+
+.posters{
+    margin: 20px;
+    width: 180px;
+    position: relative;
+}
+
+.login{
+    margin: 200px 0 0 30px ;
+}
