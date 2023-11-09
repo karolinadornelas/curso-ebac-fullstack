@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <link rel="icon" href="./assets/love.png">
+    <link rel="stylesheet" href="main.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>pet2go</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span>Diário de Bordo</span>
+            <button onclick="openModal()" id="new">+</i></button>
+        </div>
+    
+        <div class="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pet</th>
+                        <th>Nome</th>
+                        <th>Raça</th>
+                        <th>Tutor</th>
+                        <th>Registro</th>
+                        <th>Contato</th>
+                        <th>Entrada</th>
+                        <th>Observações</th>
+                        <th>Pagamento</th>
+                        <th class="action">editar</th>
+                        <th class="action">deletar</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="modal-container">
+            <div class="modal">
+              <form>
+                <label for="m-pet">Pet</label>
+                <input id="m-pet" type="text" required>
+
+                <label for="m-nome">Nome</label>
+                <input id="m-nome" type="text" required />
+
+                <label for="m-breed">Raça</label>
+                <input id="m-breed" type="text" required />
+        
+                <label for="m-tutor">Tutor</label>
+                <input id="m-tutor" type="text" required />
+
+                <label for="m-registro">Registro</label>
+                <input id="m-registro" type="text" required />
+
+                <label for="m-contato">Contato</label>
+                <input id="m-contato" type="tel" required />
+        
+                <label for="m-entrada">Entrada</label>
+                <input id="m-entrada" type="time" required />
+
+                <label for="m-obs">Observações</label>
+                <input id="m-obs" type="text">
+                
+                <label for="m-pagamento">Pagamento</label>
+                <input id="m-pagamento" type="text" required />
+
+                <button id="btnSalvar">Salvar</button>
+              </form>
+            </div>
+        </div>
+      
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
