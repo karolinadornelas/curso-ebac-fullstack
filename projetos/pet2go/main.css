@@ -13,7 +13,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0,0,0,0.1);
+  background-color: #799AD2;
 }
 
 button {
@@ -24,7 +24,7 @@ button {
   width: 90%;
   height: 80%;
   border-radius: 10px;
-  background: white;
+  background: #D9D9D9;
 }
 
 .header {
