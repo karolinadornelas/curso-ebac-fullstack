@@ -35,20 +35,21 @@ function openModal(edit = false, index = 0) {
         sPagamento.value = itens[index].pagamento
         
         id = index
-    }   else{
-        sPet.value = sPet
-        sNome.value = sNome
-        sRaca.value = sRaca
-        sTutor.value = sTutor
-        sContato.value = sContato
-        sRegistro.value = sRegistro
-        sEntrada = sEntrada
-        sObservacao = sObservacao
-        sPagamento = sPagamento
+    }else{
+        sPet.value = '';
+        sNome.value = '';
+        sRaca.value = '';
+        sTutor.value = '';
+        sRegistro.value = '';
+        sContato.value = '';
+        sEntrada.value = '';
+        sObservacao.value = '';
+        sPagamento.value = '';
+    }
+    
 
         
 
-    }
 }
 
 function editItem(index){
@@ -98,7 +99,17 @@ btnSalvar.onclick = e =>{
         itens[id].obs = sObservacao.value
         itens[id].pagamento = sPagamento.value
     }   else{
-        itens.push({'pet': sPet.value, 'nome': sNome.value, 'breed': sRaca.value, 'tutor':sTutor.value, 'entrada':sEntrada.value, 'obs':sObservacao.value, 'pagamento':sPagamento})
+        itens.push({
+        'pet': sPet.value, 
+        'nome': sNome.value, 
+        'breed': sRaca.value,
+        'registro': sRegistro.value,
+        'contato': sContato.value,
+        'tutor':sTutor.value, 
+        'entrada':sEntrada.value, 
+        'obs':sObservacao.value, 
+        'pagamento':sPagamento.value
+        })
     }
     
   setItensBD()
