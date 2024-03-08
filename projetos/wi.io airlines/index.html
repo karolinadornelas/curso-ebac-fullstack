@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <title>WI.IO Airlines</title>
+    </head>
+    <body>
+        <h1>Agende sua viagem</h1>
+        <form id="passagem">
+            <label for="name">Passageiro:</label>
+            <input type="text" id="name" required><br><br>
+
+            <label>Saindo de:</label>
+            <select name="aeroportoSaindo">
+                <option value="MCP - Amapá">MCP - Amapá</option>
+                <option value="BSB - Brasília">BSB - Brasília</option>
+                <option value="VCP - Campinas">VCP - Campinas</option>
+                <option value="FOR -Fortaleza">FOR -Fortaleza</option>
+                <option value="GRU - Guarulhos">GRU - Guarulhos</option>
+                <option value="IMP - Imperatriz">IMP - Imperatriz</option>
+                <option value="JPA - João Pessoa">JPA - João Pessoa</option>
+                <option value="MCZ - Maceió">MCZ - Maceió</option>
+                <option value="NAT - Natal">NAT - Natal</option>
+                <option value="POA - Porto Alegre">POA - Porto Alegre</option>
+                <option value="GIG - Rio de Janeiro (Galeão)">GIG - Rio de Janeiro (Galeão)</option>
+                <option value="SSZ - Santos">SSZ - Santos</option>
+                <option value="THE - Terezina">THE - Terezina</option>
+            </select>
+
+            <label>Destino:</label>
+            <select name="aeroportoDestino">
+                <option value="MCP - Amapá">MCP - Amapá</option>
+                <option value="BSB - Brasília">BSB - Brasília</option>
+                <option value="VCP - Campinas">VCP - Campinas</option>
+                <option value="FOR -Fortaleza">FOR -Fortaleza</option>
+                <option value="GRU - Guarulhos">GRU - Guarulhos</option>
+                <option value="IMP - Imperatriz">IMP - Imperatriz</option>
+                <option value="JPA - João Pessoa">JPA - João Pessoa</option>
+                <option value="MCZ - Maceió">MCZ - Maceió</option>
+                <option value="NAT - Natal">NAT - Natal</option>
+                <option value="POA - Porto Alegre">POA - Porto Alegre</option>
+                <option value="GIG - Rio de Janeiro (Galeão)">GIG - Rio de Janeiro (Galeão)</option>
+                <option value="SSZ - Santos">SSZ - Santos</option>
+                <option value="THE - Terezina">THE - Terezina</option>
+            </select><br><br>
+
+            <label for="date">Data da Viagem:</label>
+            <input type="date" id="date" required><br><br>
+
+            <label for="time">Horário da Viagem:</label>
+            <input type="time" id="time" required><br><br>
+
+            <button type="submit">Agendar Viagem</button>
+        </form>
+
+        <div id="displayPassagem"></div>
+        <script src="script.js"></script>
+        
+    </body>
+</html>
