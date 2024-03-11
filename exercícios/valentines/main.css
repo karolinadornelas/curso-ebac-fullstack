@@ -1,0 +1,118 @@
+/*#9C191B
+#FFCCD5
+#FBC4AB
+#FFD7BA
+#fdeca6
+#FFF0F3
+#F6CACC
+#D02224
+#E66063
+#E35053
+#fbc3bc
+#ffe3e0*/
+
+@font-face {
+    font-family: 'Radhen Retro';
+    src: url(./fontes/Radhen_Retro.otf);
+}
+
+@font-face {
+    font-family: 'KaiRegular';
+    src: url(./fontes/abeatbyKaiRegular.otf);
+}
+
+body{
+    background-color: #FFCCD5;
+    margin: 0;
+    font-family: 'KaiRegular';
+}
+.wrap{
+    display: flex;
+    background-color: #9C191B;
+    font-family: 'Radhen Retro';
+}
+.cab{
+    background-image: url();
+    padding:25PX;
+    margin: 0PX;
+    width: auto;
+    height: 150px;
+    background-color: #9C191B;
+    font-family: 'Radhen Retro';
+    color: #FFD7BA;
+    position: relative;
+}
+
+.patch{
+    margin-left: 50%;
+    margin-top: 75px;
+    display: flex;
+    position: absolute;
+    background-color: #FFF0F3;
+    border-radius: 50%;
+}
+
+.patch p{
+    position: relative;
+    font-size:75px;
+    margin-top: 105px;
+    font-family: 'Radhen Retro';
+    color: #FFD7BA;
+}
+
+.my{
+    margin-left: 50%;
+    margin-top: 20px;
+    display: flex;
+    position: absolute;
+    border-radius: 50%;
+}
+.my p{
+    position: relative;
+    font-size:75px;
+    font-family: 'Radhen Retro';
+    color: #FFD7BA;
+}
+
+.content{
+    margin-top: 250px;
+    margin-left: 425px;
+    margin-right: 425px;
+    width: auto;
+    display: flex;
+}
+
+.navbar{
+    background-color: #FFF0F3;
+    display:inline-block;
+    overflow: hidden;
+    border-radius: 5px;
+    position: absolute;
+    width: auto;
+    margin: 5px;
+    padding: 1dvb;
+
+    
+}
+
+.navbar a{
+    color: #D02224;
+    display: inline-block;
+    overflow: hidden;
+    
+}
+
+.post{
+    background-color: #FFF0F3;
+    display: flex;
+    padding: 10px;
+    margin-top: 75px;
+    overflow: hidden;
+    border-radius: 5px;
+    width: auto;
+}
+
+.texto-histórico img{
+    position: absolute;
+    width: 125px;
+}
