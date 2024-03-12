@@ -20,6 +20,10 @@
     font-family: 'KaiRegular';
     src: url(./fontes/abeatbyKaiRegular.otf);
 }
+@font-face {
+    font-family: 'Valentine';
+    src: url(./fontes/Valentine-7B24B.otf);
+}
 
 body{
     background-color: #FFCCD5;
@@ -27,32 +31,39 @@ body{
     font-family: 'KaiRegular';
 }
 .wrap{
+    margin-left:;
     display: flex;
     background-color: #9C191B;
     font-family: 'Radhen Retro';
 }
 .cab{
     background-image: url();
-    padding:25PX;
-    margin: 0PX;
-    width: auto;
-    height: 150px;
+    padding:;
+    margin-left: 40%;
+    width: ;
+    height: 185px;
     background-color: #9C191B;
     font-family: 'Radhen Retro';
     color: #FFD7BA;
     position: relative;
 }
 
-.patch{
-    margin-left: 50%;
-    margin-top: 75px;
+.valentine-radius{
+    margin-left: 40%;
+    margin-top: 20px;
     display: flex;
     position: absolute;
     background-color: #FFF0F3;
     border-radius: 50%;
 }
 
-.patch p{
+.valentine{
+    margin-top: 20px;
+    position: relative;
+    background-color: transparent;
+    text-decoration: ;
+}
+.valentine p{
     position: relative;
     font-size:75px;
     margin-top: 105px;
@@ -61,14 +72,14 @@ body{
 }
 
 .my{
-    margin-left: 50%;
-    margin-top: 20px;
+    margin-left: 40%;
+    margin-top: -20px;
     display: flex;
     position: absolute;
     border-radius: 50%;
 }
 .my p{
-    position: relative;
+    position: absolute;
     font-size:75px;
     font-family: 'Radhen Retro';
     color: #FFD7BA;
@@ -76,8 +87,6 @@ body{
 
 .content{
     margin-top: 250px;
-    margin-left: 425px;
-    margin-right: 425px;
     width: auto;
     display: flex;
 }
@@ -88,9 +97,9 @@ body{
     overflow: hidden;
     border-radius: 5px;
     position: absolute;
-    width: auto;
-    margin: 5px;
-    padding: 1dvb;
+    width: 100%;
+    margin-top: 190px;
+    padding: 10px;
 
     
 }
@@ -99,6 +108,8 @@ body{
     color: #D02224;
     display: inline-block;
     overflow: hidden;
+    text-decoration: none;
+
     
 }
 
@@ -106,13 +117,107 @@ body{
     background-color: #FFF0F3;
     display: flex;
     padding: 10px;
-    margin-top: 75px;
+    margin-top: ;
     overflow: hidden;
-    border-radius: 5px;
-    width: auto;
+    border-radius: 15px;
+    width: 750px;
+    margin-left: 30px;
 }
 
 .texto-histórico img{
     position: absolute;
     width: 125px;
+}
+
+.texto-histórico{
+    width: ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#receitas{
+    background-color: #E35053;
+    border: 1px solid #E35053;
+    border-radius: 20PX;
+    font-family: 'Radhen Retro';
+}
+
+.receitao{
+    background-color: #FFF0F3;
+    display: ;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(211, 177, 177, 0.4); /* Black w/ opacity */
+}
+
+.receita-box{
+    background-color: #FFF0F3;
+    border-radius: 20PX;
+    font-family: monospace;
+    display: flex;
+    
+}
+
+.barra{
+    display: flex;
+
+}
+
+.barra img{
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.icones-barra{
+    margin: 10px 0 0 200px;
+}
+
+.barra p{
+    background-color: rgb(241, 209, 209);
+    width: 250px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 25px;
+
+
+}
+
+
+
+.modal-content{
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+    background-color: #FFF0F3;
+    border: 1px solid #E35053;
+    border-radius: 25px;
+}
+
+.close{
+    color: ;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.receita-post{
+    border-top: 1px solid #9C191B;
+
 }
