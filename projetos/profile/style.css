@@ -1,0 +1,175 @@
+/*
+#9DACB2
+#949BAO
+#A0B9BF
+#A5CCD1
+#BCD4DE
+#D6F9DD
+#A4AF69
+#BDC696
+#D1D3C4
+#DFE0DC
+*/
+
+@font-face {
+    font-family: 'Kai Regular';
+    src: url(./fontes/abeatbyKaiRegular.otf);
+}
+
+@font-face {
+    font-family: 'Bubble';
+    src: url(./fontes/Bubbleboddy-FatTrial.ttf)
+}
+
+body{
+    background-color:#DFE0DC;
+    font-family: 'Kai Regular';
+}
+
+.conteudo-principal{
+    background-color: rgb(255, 255, 255);
+    border-radius: 46px;
+    width: 900px;
+    height: 595px;
+    display: flex;
+    margin: 120px 0 0 250px;
+}
+
+
+.circulo-principal{
+    background-color: #ffffff;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 187px;
+    height: 173px;
+    position: absolute;
+    margin-left: 140px;
+    margin-top: -55px;
+
+}
+
+.circulo-inside{
+    background-color:#c1c5af;
+    border: 2px solid rgb(85, 107, 85);
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 3px;
+    width: 177px;
+    height: 163px;
+}
+
+.retangulo-principal{
+    border-bottom: 5px solid rgb(216, 221, 210);
+    border-right: 5px solid rgb(216, 221, 210);
+    border-radius: 46px;
+    width: 503px;
+    height: 242px;
+    margin: 25px 175px;
+    display: flex;
+    background-color: #9dac9c;
+}
+
+.ttl{
+    font-family: 'Bubble';
+    font-size: 25px;
+    color: white;
+    position: relative;
+    margin: 10px;
+}
+
+.ttl p{
+    margin-top: 0;
+    margin-left: 15px;
+    font-size: 55px;
+}
+
+.intro{
+    background-color: white;
+    width: 250px;
+    height: 80px;
+    border-radius: 25px 100px;
+
+}
+
+.intro p{
+    font-size: 15px;
+    color: #71726c;
+    padding: 12px;
+}
+
+.mbti{
+    margin-top: 140px;
+    margin-left: 25px;
+    width: 165px;
+    position: relative;
+   
+}
+
+h3{
+    position: relative;
+    margin: 5px;
+    /*border-right: 5px solid;*/
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: 5px;
+    /*animation: 
+        typing 2s steps(4),
+        cursor .4s step-end infinite alternate;*/
+}
+
+@keyframes cursor {
+    50% {border-color:transparent}    
+}
+
+@keyframes typing{
+    from{width: 0;}
+}
+
+.mbti p{
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0;
+   
+}
+.side-squares{
+    display: flex;
+    position: absolute;
+    margin-left: 640px;
+    margin-top: 25px;
+}
+
+.outline-square{
+    border-radius: 15px;
+    margin-top: 60px;
+    margin-left: -10px;
+    width: 280px;
+    height: 115px;
+    display: flex;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+}
+.qudrado-icones{
+    background-color: #f5f7f0;
+    border-radius: 15px;
+    border: 2px solid rgb(125, 128, 134);
+    width: 77px;
+    height: 93px;
+    margin-right: 8px;
+    margin-top: 68px;
+    position: relative;
+}
+
+.qudrado-icones img{
+    margin-top: 20px;
+    margin-left: 12px;
+    width: 50px;
+}
+
+.qudrado-icones p{
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+    color: #71726c;
+}
