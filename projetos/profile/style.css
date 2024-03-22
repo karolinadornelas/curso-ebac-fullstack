@@ -180,9 +180,39 @@ h3{
     width: 203px;
     height: 142px;
     margin: 300px 175px;
-    display: flex;
     background-color: #42614f;
     position: absolute;
+}
+
+.imagem_e_link{
+    display: flex;
+}
+
+.caixa-estilo-dialogo{
+    background-color: white;
+    width: auto;
+    height: 20px;
+    border-radius: 15px;
+    padding: 2px;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+.info img{
+    width: 55px;
+    height: 55px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.info p{
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 15px;
+}
+
+.info-2{
+    margin-top: 235;
 }
 
 .detalhe{
@@ -200,10 +230,23 @@ h3{
     background-color:#FFF;    
     display:inline-block;
     vertical-align: middle;
-    margin-right: 10px;
-    margin-top: 6px;
+    margin-right: 2px;
+    margin-top: 7px;
     content: '';
 }
+.detalhe::after
+{
+    width: 40px;
+    height: 40px;
+    border-radius:40px 0px 0px 40px;
+    background-color:#FFF;    
+    display:inline-block;
+    vertical-align: middle;
+    margin-left: 18px;
+    margin-top: 7px;
+    content: '';
+}
+
 
 .info-4{
     border-bottom: 5px solid rgb(216, 221, 210);
@@ -225,5 +268,54 @@ h3{
     margin-left: 370px;
     margin-top: 430px;
     position: absolute;
+
+}
+
+.info-4{
+    display: flex;
+}
+
+.titulo-bottom{
+    font-family: 'Bubble';
+    color:#ffffff;
+    text-shadow: -2px 0 #819187, 1px -1px 0 #819187, -1px 1px 0 #819187, 1px 1px 0 #819187;
+    font-size: 32px;
+    margin-left: 57px;
+    margin-top: -15px;
+    position: absolute;
+}
+.sociais img{
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 55px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.sociais{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.star{
+    width: 300px;
+    height: 250px;
+    margin-left: 570px;
+    margin-top: -15px;
+    position: absolute;
+    display: block;
+}
+
+.star h5{
+    font-family: 'Bubble';
+    color:#819187;
+    text-shadow: -2px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    font-size: 32px;
+}
+
+.star p{
+    margin-top: -50px;
+    font-size: 12px;
 
 }
