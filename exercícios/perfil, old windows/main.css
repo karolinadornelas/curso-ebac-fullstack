@@ -1,0 +1,72 @@
+.btn-preto{
+    width: 25PX;
+    height: 25px;
+
+    background-color: black;
+    
+    
+
+}
+
+.btn-amarelo{
+    width: 25PX;
+    height: 25px;
+    color: transparent;
+    background-color: rgb(255, 240, 25);
+    
+}
+
+.btn-alaranjado{
+    width: 25PX;
+    height: 25px;
+    color: transparent;
+    background-color: rgb(255, 190, 49);
+    
+}
+
+.btn-vermelho{
+    width: 25PX;
+    height: 25px;
+    color: transparent;
+    background-color: rgb(226, 100, 100);
+    
+}
+.btn-rosa{
+    width: 25PX;
+    height: 25px;
+    color: transparent;
+    background-color: rgb(241, 187, 224);
+    
+}
+
+.btn-roxo{
+    width: 25PX;
+    height: 25px;
+    color: transparent;
+    background-color: rgb(177, 129, 206);
+    
+}
+
+.btn-azul{
+    width: 25PX;
+    height: 25px;
+    color: transparent;
+    background-color: rgb(77, 105, 184);
+    
+}
+
+.btn-verde{
+    width: 25PX;
+    height: 25px;
+    color: transparent;
+    background-color: rgb(145, 209, 115);
+    
+}
+
+.btn-branco{
+    width: 25PX;
+    height: 25px;
+    color: transparent;
+    background-color: #ffffff;
+    
+}

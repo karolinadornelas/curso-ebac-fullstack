@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>karolina's hub</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+    <!-- Adiciona botões para selecionar cores -->
+    <div id="toolbar">
+        <button class="btn-preto" onclick="setColor(0, 0, 0)"></button>
+        <button class="btn-vermelho" onclick="setColor(226, 100, 100)"></button>
+        <button class="btn-rosa" onclick="setColor(241, 187, 224)"></button>
+        <button class="btn-roxo" onclick="setColor(177, 129, 206)"></button>
+        <button class="btn-azul" onclick="setColor(77, 105, 184)"></button>
+        <button class="btn-verde" onclick="setColor(145, 209, 115)"></button>
+        <button class="btn-amarelo" onclick="setColor(255, 240, 25)"></button>
+        <button class="btn-alaranjado" onclick="setColor(255, 190, 49)"></button>
+        <button class="btn-branco" onclick="setColor(255,255,255)"></button>
+        <img src="./assets/eraser.png" onclick="setColor(245, 242, 207)" style="width: 25PX; height: 25px;">
+        <img src="./assets/delete.png" onclick="undo()" style=" width: 25PX; height: 25px;">
+            
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
