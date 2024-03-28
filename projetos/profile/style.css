@@ -24,6 +24,8 @@
 body{
     background-color:#DFE0DC;
     font-family: 'Kai Regular';
+    overflow: hidden;
+    height: 100vh;
 }
 
 .conteudo-principal{
@@ -32,7 +34,7 @@ body{
     width: 900px;
     height: 595px;
     display: flex;
-    margin: 120px 0 0 250px;
+    margin: 90px 0 0 250px;
 }
 
 
@@ -44,7 +46,7 @@ body{
     height: 173px;
     position: absolute;
     margin-left: 140px;
-    margin-top: -55px;
+    margin-top: -25px;
 
 }
 
@@ -63,7 +65,7 @@ body{
     border-right: 5px solid rgb(216, 221, 210);
     border-radius: 46px;
     width: 503px;
-    height: 242px;
+    height: 200px;
     margin: 25px 175px;
     display: flex;
     background-color: #9dac9c;
@@ -86,7 +88,9 @@ body{
 .intro{
     background-color: white;
     width: 250px;
-    height: 80px;
+    height: 90px;
+    margin-top: -42px;
+    margin-left: -35px;
     border-radius: 25px 100px;
 
 }
@@ -98,7 +102,7 @@ body{
 }
 
 .mbti{
-    margin-top: 140px;
+    margin-top: 130px;
     margin-left: 25px;
     width: 165px;
     position: relative; 
@@ -107,11 +111,11 @@ body{
 h3{
     position: relative;
     margin: 5px;
-    /*border-right: 5px solid;*/
     width: auto;
     white-space: nowrap;
     overflow: hidden;
     letter-spacing: 5px;
+    /*border-right: 5px solid;*/
     /*animation: 
         typing 2s steps(4),
         cursor .4s step-end infinite alternate;*/
@@ -128,13 +132,12 @@ h3{
 .mbti p{
     font-size: 10px;
     font-weight: bold;
-    margin: 0;
-   
+    margin: 0;  
 }
 .side-squares{
     display: flex;
     position: absolute;
-    margin-left: 640px;
+    margin-left: 660px;
     margin-top: 25px;
 }
 
@@ -173,13 +176,13 @@ h3{
     color: #71726c;
 }
 
-.info{
+.info-tulipas{
     border-bottom: 5px solid rgb(216, 221, 210);
     border-left: 5px solid rgb(216, 221, 210);
     border-radius: 46px;
     width: 203px;
     height: 142px;
-    margin: 300px 175px;
+    margin: 245px 175px;
     background-color: #42614f;
     position: absolute;
 }
@@ -197,7 +200,7 @@ h3{
     margin-top: 25px;
     margin-right: 10px;
 }
-.info img{
+.info-tulipas img{
     width: 55px;
     height: 55px;
     border: 1px solid white;
@@ -205,7 +208,7 @@ h3{
     margin-top: 20px;
     margin-left: 15px;
 }
-.info p{
+.info-tulipas p{
     font-size: 12px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 15px;
@@ -219,7 +222,7 @@ h3{
     background-color:#9dac9c;
     width: 100px;
     height: 100px;
-    margin-top: 260px;
+    margin-top: 218px;
     margin-left: -620px;
 }
 .detalhe:before
@@ -269,10 +272,6 @@ h3{
     margin-top: 430px;
     position: absolute;
 
-}
-
-.info-4{
-    display: flex;
 }
 
 .titulo-bottom{
